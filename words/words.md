@@ -620,113 +620,112 @@ Traditionally, contacts are found with in-person interviews, but those *alone* a
 
 You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
 
-[^incoming]: “None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
+你是對的。口罩沒辦法避免你生病[^incoming]⋯⋯他們避免你將病傳染給*別人*。
 
-[^outgoing]: “The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+[^incoming]: 「沒有任何一種手術面罩表現出足夠的過濾表現和貼合臉部的特徵，使他們能被視為呼吸道保護器材。」 [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
-[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
+[^outgoing]: 「我們觀察到的氣膠降低3.4倍 [減少70%]，加上Johnson等人的研究發現大型飛沫幾乎完全消除，顯示患者帶著醫用口罩可能對疾病傳播產生顯著的臨床影響。」[Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+
+[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) 見表1：對於兩項細菌氣膠的測試，百分之百純棉的T恤約有醫用口罩2/3的過濾力。
 
 ![](pics/masks.png)
 
-To put a number on it: surgical masks *on the infectious person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
+我們把這些效應量化：*患者戴口罩*減低感冒和流感病毒氣膠的70%。[^outgoing]傳染率減低70%代表和封城的效應一樣大！
 
-However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+然而我們並不知道口罩*針對*COVID-19的效應有多大，科學上我們只應該發表有95%信心的發現。（⋯⋯應該。[^replication]）在2020年5月1日我們對於口罩的效應只有「低於95%的信心」。
 
-[^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
+[^replication]: 一位真正的科學家讀到這句話可能正在哈哈大笑。見：[p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [再現性危機](https://en.wikipedia.org/wiki/Replication_crisis))
 
-However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
+但對付疫情就像玩牌，**Make bets only when you're 95% sure, and you'll lose everything at stake.** 正如一篇近期在英國醫學期刊(BMJ)關於口罩的論文提到的[^precautionary]，我們*必須*在不確定中做利弊分析。像這樣：
 
-[^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
+[^precautionary]: 「現在是使用預防原則的時候了。」 [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
+成本：如果自製衣物口罩（效用大約是醫用口罩的2/3[^homemade]），超級便宜。醫用口罩比較貴但還是很便宜。
 
-Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
+好處：即使只有5成的機會醫用口罩能降低70%的傳播，5成的機會它們完全沒用，*期望值*仍舊是35%，這跟半封城一樣！因為不確定性，我們猜測醫用口罩能降低R值最多至35%（再一次說你可以藉由改變參數來挑戰我們的假設）。
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
 
-(other arguments for/against masks:[^mask_args])
+（其它支持／反對口罩的論點：[^mask_args]）
 
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
+[^mask_args]: **「我們需要為醫院省下物資。」** *完全同意。*但這比較是支持增加口罩產量的論述，而不是分配。因為同一時間我們可以用衣物做口罩。
 
-   **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
+   **「口罩很難戴得正確。」**照世衛指南洗手也很困難——認真的，「第三步：右手掌在左手背上」？！——但我們仍然建議洗手，因為不完美仍比什麼都不做好。
    
-   **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
-    
-    
+   **「這會讓人們更輕忽洗手和社交距離。」** 的確，安全帶讓人們忽略交通號誌，牙線讓人們亂吃。但認真說，我們會往相反的方向論證：口罩是一個*實體化*的提醒——而且在東亞，口罩是團結的象徵！    
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
+*單單使用*口罩沒辦法達到 R < 1。但如果洗手加「檢驗、追蹤、隔離」將R降低至1.10，只需1/3的人戴口罩就能將R降到1以下，成功遏制病毒！
 
-**Summer:**
+**夏天：**
 
-Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
+Okay，這不是我們能掌握的「手段」，但這會有幫助！一些新聞報導指出夏天不會對疫情造成任何影響，他們對一半：夏天不會讓 R < 1，但*會*降低R。
 
-For COVID-19, every extra 1° Celsius (1.8° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 26°C (47°F),[^nyc_heat] so summer will make R drop by ~31%.
+對COVID-19來說，每增加攝氏1度（華氏1.8度）會讓R值降低1.2%。[^heat]紐約市夏冬溫差是26%，所以夏天會讓R降低約31%。
 
-[^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: 「溫度每增加攝氏1度[...]R降低0.0225。」和「這一百座城市的平均R值為1.83。」 0.0225 ÷ 1.83 = ~1.2%。 [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
-[^nyc_heat]: In 2019 at Central Park, hottest month (July) was 79.6°F, coldest month (Jan) was 32.5°F. Difference is 47.1°F, or ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
+[^nyc_heat]: 2019年在中央公園，最熱的月份（七月）是79.6°F，最冷的月份（一月）是32.5°F，溫差是47.1°F或約26°C。 [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+夏天本身不會讓 R < 1，但如果我們只有有限的資源，我們可以在夏天花少一點——這樣我們為冬天做預備。
 
-**A "Circuit Breaker" Lockdown:**
+**「斷路器式」封鎖：**
 
-And if all that *still* isn't enough to get R < 1... we can do another lockdown.
+如果這一切都沒辦法讓 R < 1⋯⋯我們還是能再封鎖一次。
 
-But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
+但我們不需要在持續兩個月封鎖／一個月解封的循環！因為R已經被降低了，我們只需要在疫苗問世前實施一兩次「斷路器式」的封鎖即可（最近新加坡就不得不這麼做，「雖然」他們已經控制疫情四個月了。這不代表失敗：這是成功的*代價*。）
 
-Here's a simulation of a "lazy case" scenario:
+以下是一個「懶惰例子」的模擬：
 
-1. Lockdown, then
-2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
-3. One more "circuit breaker" lockdown before a vaccine's found.
+1. 封鎖，然後
+2. 適度的衛生＋「檢測、追蹤、隔離」＋適度的全民口罩政策，然後
+3. 在疫苗問世前再一次「斷路器式」的封鎖。
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
 
-Not to mention all the *other* interventions we could do, to further push R down:
+不要說我們還有*一堆*手段可以再進一步壓制R：
 
-* Travel restrictions/quarantines
-* Temperature checks at malls & schools
-* Deep-cleaning public spaces
-* [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
-* And all else human ingenuity shall bring
-
+* 旅遊限制／隔離檢疫
+* 在商場和學校量測體溫
+* 公共場所全面消毒
+* [將握手改為碰腳](https://twitter.com/V_actually/status/1233785527788285953)
+* 和其它一切人類的創造力將帶來
 . . .
 
-We hope these plans give you hope. 
+我們希望這些計畫能帶給你希望。
 
-**Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contact tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+**即使在悲觀的情況，在保全心理健康和經濟的前提下打敗COVID-19仍是可能的。** 將封鎖視為「重啟鍵」，用隔離病患來保持 R < 1＋保護隱私的接觸追蹤＋口罩（至少自製口罩）⋯⋯生活可以幾乎回歸正常！
 
-Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
+當然，你可能會有雙乾澀的手，但你可以到漫畫店約會！你可以和朋友出門去看最新的好萊塢大戲。你可以去圖書館觀察人群，享受人們*活著*從事日常事務的喜悅。
 
-Even under the worst-case scenario... life perseveres.
+即使在最壞的情況下⋯⋯生命仍能堅持下去。
 
-So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+所以讓我們為*最壞*的幾個情況做計畫。我們會在水面降落，準備好你的救生衣，跟隨指示燈到緊急逃生口：
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>接下來的幾年</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+你得到新冠肺炎並且復原了，或者你接種了疫苗。不管哪種情況，你現在都有免疫力⋯⋯
 
-...*for how long?*
+⋯⋯*能持續多久？*
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+* COVID-19最親近的近親為SARS，SARS的倖存者有2年的免疫力。[^SARS immunity]
+* 造成普通感冒的冠狀病毒會給你8個月的免疫力。[^cold immunity]
+* 有些患者從COVID-19康復然後再被檢測出陽性，但目前我們仍不清楚這是不是偽陽性。[^unclear]
+* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.一篇還未經同行審查關於猴子的研究顯示對新冠病毒的免疫力至少能持續28天。[^monkeys]
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+但人體對COVID-19的免疫力*有多長*，在2020年5月1日的現在仍舊是大哉問。
 
 [^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
 
