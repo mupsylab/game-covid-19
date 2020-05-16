@@ -506,7 +506,7 @@
 
 [^replication]: 一位真正的科學家讀到這句話可能正在哈哈大笑。見：[p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [再現性危機](https://en.wikipedia.org/wiki/Replication_crisis))
 
-但對付疫情就像玩牌， **Make bets only when you're 95% sure, and you'll lose everything at stake.**  正如一篇近期在英國醫學期刊(BMJ)關於口罩的論文提到的[^precautionary]，我們 *必須* 在不確定中做利弊分析。像這樣：
+但對付疫情就像牌局， **如果要等到有百分之九十五的把握才要下注，那在賭局中你將輸得很慘**  正如一篇近期在英國醫學期刊(BMJ)關於口罩的論文提到的[^precautionary]，我們 *必須* 在不確定中做利弊分析。像這樣：
 
 [^precautionary]: 「現在是使用預防原則的時候了。」 [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
