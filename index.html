@@ -75,11 +75,11 @@
 
 <article>
 	<div class="section">
-			<div>
-				<iframe id="splash" src="" width="960" height="480"></iframe>
-					<div style="top: 70px;font-size: 75px;font-weight: bold;">
-						接下來會發生什麼事？
-					</div>
+	    <div>
+	    	<iframe id="splash" src="" width="960" height="480"></iframe>
+	        <div style="top: 70px;font-size: 75px;font-weight: bold;">
+	        	接下來會發生什麼事？
+	       	</div>
 			<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
 				用互動式模擬解釋 COVID-19 疫情的可能發展
 			</div>
@@ -101,10 +101,10 @@
 	<li><strong>接下來的幾個月</strong>（封鎖、接觸追蹤、口罩）</li>
 	<li><strong>接下來的數年</strong>（失去免疫力？沒有疫苗？）</li>
 	</ul><p>這份指南（2020年5月1日出版，點擊註腳！→<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>）的主旨是要給你盼望和恐懼。為了以 <strong>確保我們心理健康及財政健全</strong> 的方式打敗新冠病毒，我們需要樂觀地制定計劃，並且悲觀地制定備案。正如 Gladys Brownwyn Stern 曾說過的：「樂觀者發明飛機而悲觀者發明降落傘。」</p><p>所以請繫好安全帶，我們將遭遇亂流。</p><div class="section chapter">
-			<div>
+	    <div>
 			<img src="" style="position: absolute;" height="480">
-					<div>之前的幾個月</div>
-			</div>
+	        <div>之前的幾個月</div>
+	    </div>
 	</div><p>飛行員用飛行模擬器來避免如何避免飛機失事。</p><p><strong>流行病學家使用傳染病模擬器來避免人類滅亡。</strong></p><p>所以讓我們來做一個非常、 <em>非常</em> 簡單的「傳染病飛行模擬器」！在這個模擬中 &lt;icon i&gt;&lt;/icon&gt; 感染者 &lt;icon s&gt;&lt;/icon&gt; 可以將疾病傳播給易感者，因而產生更多 &lt;icon i&gt;&lt;/icon&gt; 感染者:</p><p><img src="" alt=""></p><p>經過估計，在 COVID-19 爆發初期， <em>平均</em> 每四天病毒從一個 &lt;icon i&gt;&lt;/icon&gt; 傳播到一個 &lt;icon s&gt;&lt;/icon&gt; <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> (記住這有很多變因)</p><p>如果我們 <em>只用</em> 「每四天感染者增加一倍」這個條件在只有 0.001% 感染者的初始條件下<span class="nowrap">&lt;icon i&gt;&lt;/icon&gt;，</span>會發生什麼事？</p><p><strong>點擊「開始」來遊玩！你可以在之後以不同的條件再玩一次：</strong> （警告：<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>）</p><div class="sim">
 			<iframe src="" width="800" height="540"></iframe>
 	</div><p>這是一條 <strong>指數增長的曲線</strong> 。一開始很小、然後爆炸。從「喔這只是流感」到「好啦！流感不會讓富裕的城市出現萬人塚。」</p><p><img src="" alt=""></p><p>但這個模擬是錯的。幸好指數增長不能永遠持續。其中一件阻止病毒傳播的因素是其他人是否 <em>已經</em> 得到這個病毒。</p><p><img src="" alt=""></p><p>越多 <span class="nowrap">&lt;icon i&gt;&lt;/icon&gt;</span> 的時候, <span class="nowrap">&lt;icon s&gt;&lt;/icon&gt;s</span> 越快變成 <span class="nowrap">&lt;icon i&gt;&lt;/icon&gt;，</span>  <strong>但 <span class="nowrap">&lt;icon s&gt;&lt;/icon&gt;越少的時候</span>，<span class="nowrap">&lt;icon s&gt;&lt;/icon&gt;s</span>  <em>越慢</em> 變成 <span class="nowrap">&lt;icon i&gt;&lt;/icon&gt;.</span></strong></p><p>這如何改變疫情的增長呢？讓我們試試看：</p><div class="sim">
@@ -127,10 +127,10 @@
 	</div><p>當具有免疫力的人夠多的時候，R &lt; 1，疫情被控制住了！這叫做 <strong>群體免疫（herd immunity）</strong> 。對流感的群體免疫是藉由 <em>疫苗</em> 獲得，藉由很多民眾被感染而取得「天然群體免疫」是很 <em>糟糕</em> 的想法（但可能不是你所想像的原因！我們會在之後解釋。）</p><p>讓我們在玩SEIR模型一遍，但這次顯示R<sub>0</sub>、R隨時間的變化和群體免疫閥值：</p><div class="sim">
 			<iframe src="" width="800" height="540"></iframe>
 	</div><p><strong>註：病例總數並不會停在得到群體免疫的時間點，而是在這之後！而且群體免疫 <em>正是在</em> 現存病例的最高峰時產生的（這件事不隨參數改變，你自己試試看！）</strong></p><p>這是因為當<span class="nowrap">非&lt;icon s&gt;&lt;/icon&gt;</span>大於群體免疫閥值的時候你會得到 R&lt;1 ，而當 R&lt;1 時候，新病例的增長速度減慢：也就是高峰。</p><p><strong>如果你只能從這份指南學到一件事的話，就是這件事</strong> ——這是一個非常複雜的圖，所以請花時間好好吸收它：</p><p><img src="" alt=""></p><p><strong>這代表：我們不需要找到所有或幾乎所有傳染途徑來阻止COVID-19！</strong></p><p>這是個悖論，COVID-19的傳染性超級高，但我們「只需」降低60%的傳染就能遏止它。60%？！如果換算成學校成績的話，那代表D-，但如果R<sub>0</sub>=2.5的話，減少61%的傳染會讓我們得到R=0.975，也就是 R&lt;1。病毒被遏制住了！（正確的公式：<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup>）</p><p><img src="" alt=""></p><p>（如果你覺得 R<sub>0</sub>或模擬裡其它數字太低／太高的話，這很好因為你正在挑戰我們的假設！在這份指南的結尾我們提供一個「沙盒模式」，你可以在那裡試試 <em>你自己</em> 的數字然後看看會發生什麼。）</p><p><em>所有</em>你聽過阻擋COVID-19的手段——洗手、社交／肢體距離、封鎖、自主隔離、接觸追蹤和隔離檢疫、戴口罩甚至「群體免疫」——它們都是為了同一件事：</p><p>讓 R &lt; 1。</p><p>所以現在讓我們的「流行病飛行模擬器」來解答：如果在確保 <strong>心理健康 <em>和</em> 財政健全的情況下</strong> 讓 R &lt; 1？</p><p>準備好緊急迫降⋯⋯</p><div class="section chapter">
-			<div>
+	    <div>
 			<img src="" style="position: absolute;" height="480">
-					<div>接下來的幾個月</div>
-			</div>
+	        <div>接下來的幾個月</div>
+	    </div>
 	</div><p>⋯⋯事情可能會變更糟。接下來是我們避免的平行宇宙：</p><h3 id="場景-0：什麼都不做">場景 0：什麼都不做</h3><p>每20個感染新冠病毒的人有1個需要進到加護病房<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup>。以美國為例的富裕國家，每3400個人會分到一張加護病房的病床<sup class="footnote-ref"><a href="#fn14" id="fnref14">[14]</a></sup>。因此美國能處理每3400人有20人得到新冠病毒的狀況——或0.6%的人口。</p><p>如果我們將負荷量提高到3倍以上來到2%，以下是我們 <em>完全不做任何事</em> 會發生的情況：</p><div class="sim">
 			<iframe src="" width="800" height="540"></iframe>
 	</div><p>不好。</p><p>這是 <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/" target="_blank" rel="noopener">3月16號倫敦帝國學院報告</a>的結論：如果我們什麼都不做，加護病房會塞滿病人，而且80%的人口會被感染。
@@ -163,7 +163,7 @@
 	<li>我們贏了。</li>
 	</ol><div class="sim">
 			<iframe src="" width="800" height="540"></iframe>
-	</div><p>就是這樣！這就是我們如果將飛機緊急迫降。</p><p>這就是我們如何打敗COVID-19。</p><p>…</p><p>但如果事情 <em>仍然</em> 往不好的方向發展呢？事情已經很糟了。這是恐懼。這很好！恐懼給我們力量制定 <em>備案</em> 。</p><p>悲觀者發明降落傘。</p><h3 id="場景4：全民戴口罩、夏天、斷路器">場景4+：全民戴口罩、夏天、斷路器</h3><p>如果R<sub>0</sub>比我們想的要高得多，而且以上所有的手段，甚至是輕微的距離規範，<em>仍沒有</em>辦法讓 R &lt; 1呢？</p><p>記住，即使我們沒辦法讓 R &lt; 1，降低R值仍然能夠減少病例總數，因此挽救生命。即使是這樣，R &lt; 1仍然是理想的情況，所以這裡提供其他降低R的方法。</p><p><strong>全民戴口罩：</strong></p><p><em>等等</em> 你可能想 <em>我以為口罩沒辦法避免人生病？」</em></p><p>你是對的。口罩沒辦法避免你生病<sup class="footnote-ref"><a href="#fn31" id="fnref31">[31]</a></sup>⋯⋯他們避免你將病傳染給 <em>別人</em> 。</p><p><img src="" alt=""></p><p>我們把這些效應量化： <em>患者戴口罩</em> 減低感冒和流感病毒氣膠的70%。<sup class="footnote-ref"><a href="#fn32" id="fnref32">[32]</a></sup>傳染率減低70%代表和封城的效應一樣大！</p><p>然而我們並不知道口罩 <em>針對</em> COVID-19的效應有多大，科學上我們只應該發表有95%信心的發現。（⋯⋯應該。<sup class="footnote-ref"><a href="#fn33" id="fnref33">[33]</a></sup>）在2020年5月1日我們對於口罩的效應只有「低於95%的信心」。</p><p>但對付疫情就像玩牌， <strong>Make bets only when you’re 95% sure, and you’ll lose everything at stake.</strong>  正如一篇近期在英國醫學期刊(BMJ)關於口罩的論文提到的<sup class="footnote-ref"><a href="#fn34" id="fnref34">[34]</a></sup>，我們 <em>必須</em> 在不確定中做利弊分析。像這樣：</p><p>成本：如果自製衣物口罩（效用大約是醫用口罩的2/3<sup class="footnote-ref"><a href="#fn35" id="fnref35">[35]</a></sup>），超級便宜。醫用口罩比較貴但還是很便宜。</p><p>好處：即使只有5成的機會醫用口罩能降低70%的傳播，5成的機會它們完全沒用， <em>期望值</em> 仍舊是35%，這跟半封城一樣！因為不確定性，我們猜測醫用口罩能降低R值最多至35%（再一次說你可以藉由改變參數來挑戰我們的假設）。</p><div class="sim">
+	</div><p>就是這樣！這就是我們如果將飛機緊急迫降。</p><p>這就是我們如何打敗COVID-19。</p><p>…</p><p>但如果事情 <em>仍然</em> 往不好的方向發展呢？事情已經很糟了。這是恐懼。這很好！恐懼給我們力量制定 <em>備案</em> 。</p><p>悲觀者發明降落傘。</p><h3 id="場景4：全民戴口罩、夏天、斷路器">場景4+：全民戴口罩、夏天、斷路器</h3><p>如果R<sub>0</sub>比我們想的要高得多，而且以上所有的手段，甚至是輕微的距離規範，<em>仍沒有</em>辦法讓 R &lt; 1呢？</p><p>記住，即使我們沒辦法讓 R &lt; 1，降低R值仍然能夠減少病例總數，因此挽救生命。即使是這樣，R &lt; 1仍然是理想的情況，所以這裡提供其他降低R的方法。</p><p><strong>全民戴口罩：</strong></p><p><em>等等</em> 你可能想 <em>我以為口罩沒辦法避免人生病？」</em></p><p>你是對的。口罩沒辦法避免你生病<sup class="footnote-ref"><a href="#fn31" id="fnref31">[31]</a></sup>⋯⋯他們避免你將病傳染給 <em>別人</em> 。</p><p><img src="" alt=""></p><p>我們把這些效應量化： <em>患者戴口罩</em> 減低感冒和流感病毒氣膠的70%。<sup class="footnote-ref"><a href="#fn32" id="fnref32">[32]</a></sup>傳染率減低70%代表和封城的效應一樣大！</p><p>然而我們並不知道口罩 <em>針對</em> COVID-19的效應有多大，科學上我們只應該發表有95%信心的發現。（⋯⋯應該。<sup class="footnote-ref"><a href="#fn33" id="fnref33">[33]</a></sup>）在2020年5月1日我們對於口罩的效應只有「低於95%的信心」。</p><p>但對付疫情就像牌局， <strong>如果要等到有百分之九十五的把握才要下注，那在賭局中你將輸得很慘</strong>  正如一篇近期在英國醫學期刊(BMJ)關於口罩的論文提到的<sup class="footnote-ref"><a href="#fn34" id="fnref34">[34]</a></sup>，我們 <em>必須</em> 在不確定中做利弊分析。像這樣：</p><p>成本：如果自製衣物口罩（效用大約是醫用口罩的2/3<sup class="footnote-ref"><a href="#fn35" id="fnref35">[35]</a></sup>），超級便宜。醫用口罩比較貴但還是很便宜。</p><p>好處：即使只有5成的機會醫用口罩能降低70%的傳播，5成的機會它們完全沒用， <em>期望值</em> 仍舊是35%，這跟半封城一樣！因為不確定性，我們猜測醫用口罩能降低R值最多至35%（再一次說你可以藉由改變參數來挑戰我們的假設）。</p><div class="sim">
 			<iframe src="" width="285" height="380"></iframe>
 	</div><p>（其它支持／反對口罩的論點：<sup class="footnote-ref"><a href="#fn36" id="fnref36">[36]</a></sup>）</p><p><strong>「口罩很難戴得正確。」</strong> 照世衛指南洗手也很困難——認真的，「第三步：右手掌在左手背上」？！——但我們仍然建議洗手，因為不完美仍比什麼都不做好。</p><p><strong>「這會讓人們更輕忽洗手和社交距離。」</strong> 的確，安全帶讓人們忽略交通號誌，牙線讓人們亂吃。但認真說，我們會往相反的方向論證：口罩是一個<em>實體化</em>的提醒——而且在東亞，口罩是團結的象徵！</p><p><em>單單使用</em> 口罩沒辦法達到 R &lt; 1。但如果洗手加「檢驗、追蹤、隔離」將R降低至1.10，只需1/3的人戴口罩就能將R降到1以下，成功遏制病毒！</p><p><strong>夏天：</strong></p><p>Okay，這不是我們能掌握的「手段」，但這會有幫助！一些新聞報導指出夏天不會對疫情造成任何影響，他們對一半：夏天不會讓 R &lt; 1，但 <em>會</em> 降低R。</p><p>對COVID-19來說，每增加攝氏1度（華氏1.8度）會讓R值降低1.2%。<sup class="footnote-ref"><a href="#fn37" id="fnref37">[37]</a></sup>紐約市夏冬溫差是攝氏26度（華氏47度）<sup class="footnote-ref"><a href="#fn38" id="fnref38">[38]</a></sup>，所以夏天會讓R降低約31%。</p><div class="sim">
 			<iframe src="" width="285" height="220"></iframe>
@@ -181,10 +181,10 @@
 	<li>和其它一切人類的創造力將帶來
 	. . .</li>
 	</ul><p>我們希望這些計畫能帶給你希望。</p><p><strong>即使在悲觀的情況，在保全心理健康和經濟的前提下打敗COVID-19仍是可能的。</strong> 將封鎖視為「重啟鍵」，用隔離病患來保持 R &lt; 1＋保護隱私的接觸追蹤＋口罩（至少自製口罩）⋯⋯生活可以幾乎回歸正常！</p><p>當然，你可能會有雙乾裂的手，但你可以到漫畫店約會！你可以和朋友出門去看最新的好萊塢大戲。你可以去圖書館觀察人群，享受人們 <em>活著</em> 從事日常事務的喜悅。</p><p>即使在最壞的情況下⋯⋯生命仍能堅持下去。</p><p>所以讓我們為 <em>最壞</em> 的幾個情況做計畫。我們會在水面降落，準備好你的救生衣，跟隨指示燈到緊急逃生口：</p><div class="section chapter">
-			<div>
+	    <div>
 			<img src="" style="position: absolute;" height="480">
-					<div>接下來的幾年</div>
-			</div>
+	        <div>接下來的幾年</div>
+	    </div>
 	</div><p>你得到新冠肺炎並且復原了，或者你接種了疫苗。不管哪種情況，你現在都有免疫力⋯⋯</p><p>⋯⋯ <em>能持續多久？</em></p><ul>
 	<li>COVID-19最親近的近親為SARS，SARS的倖存者有2年的免疫力。 <sup class="footnote-ref"><a href="#fn39" id="fnref39">[39]</a></sup></li>
 	<li>造成普通感冒的冠狀病毒會給你8個月的免疫力。 <sup class="footnote-ref"><a href="#fn40" id="fnref40">[40]</a></sup></li>
@@ -214,11 +214,11 @@
 	</div><p>即使在最糟的幾個情況中最壞的那個⋯⋯生命仍能堅持下去。</p><p>. . .</p><p>也許你想嘗試使用不同的R<sub>0</sub>或數字，或嘗試模擬你<em>自己的</em>干預計劃組合來挑戰我們的假設！</p><p><strong>接下來模擬是沙盒模式， <em>所有的</em> 參數都列出來，（滑動來看到所有的參數）模擬和常識你心中的想法：</strong></p><div class="sim">
 			<iframe src="" width="800" height="540"></iframe>
 	</div><p>這個基本的「流行病飛行模擬器」已經教會我們很多事情，它讓我們能回答過去幾個月、接下來幾個月和接下來幾年會遇到的問題。</p><p>最後，讓我們回到⋯⋯</p><div class="section chapter">
-			<div>
+	    <div>
 			<img src="" style="position: absolute;" height="480">
-					<div>現在</div>
-			</div>
-	</div><p>墜機了，我們爬上救生筏，現在是找到路地的時候了。<sup class="footnote-ref"><a href="#fn45" id="fnref45">[45]</a></sup></p><p>許多流行學家和政策制定者的團隊（<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/" target="_blank" rel="noopener">左派</a>、<a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/" target="_blank" rel="noopener">右派</a>和<a href="https://ethics.harvard.edu/covid-roadmap" target="_blank" rel="noopener">跨黨派</a>）已經達成在保全我們的生活 <em>及</em> 自由的前提下，如何打敗COVID-19的共識。</p><p>以下是基本的想法，以及一些（比較沒有共識）的備案：</p><p><img src="" alt=""></p><p>所以這在當下對你的意義是什麼？</p><p><strong>給所有人：</strong> 遵守封城規定讓我們能越快脫離第一階段越好、持續洗手、製作你自己的口罩。在下個月<em>保護隱私</em>的接觸追蹤app問世時下載他們。保持身心健康！寫信給你的地方決策者，叫他們開始行動⋯⋯</p><p><strong>給決策者：</strong> 制訂支援需要自主隔離／隔離檢疫的民眾。雇用更多接觸追蹤員，並讓接觸追蹤app<em>協助</em>他們。提供更多資金讓我們可以製作⋯⋯</p><p><strong>給建造者：</strong> 製作測試。製造呼吸器。製造給醫院的個人保護用具。製作測試。製造口罩。開發app。製作抗病毒藥物、預防藥物、和其它非疫苗的治療。製作疫苗。製作測試。製作測試。製作測試。建立希望。</p><p>不要用壓制恐懼來建立希望。我們的恐懼應該和希望用在一起，如同飛機和降落傘的發明人。為恐怖的未來做準備是我們如何 <em>產生</em> 有希望的未來。</p><p>唯一需要恐懼的是唯一需要恐懼的是恐懼的想法。</p><hr class="footnotes-sep"><section class="footnotes">
+	        <div>現在</div>
+	    </div>
+	</div><p>墜機了，我們爬上救生筏，現在是找到路地的時後了。<sup class="footnote-ref"><a href="#fn45" id="fnref45">[45]</a></sup></p><p>許多流行學家和政策制定者的團隊（<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/" target="_blank" rel="noopener">左派</a>、<a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/" target="_blank" rel="noopener">右派</a>和<a href="https://ethics.harvard.edu/covid-roadmap" target="_blank" rel="noopener">跨黨派</a>）已經達成在保全我們的生活 <em>及</em> 自由的前提下，如何打敗COVID-19的共識。</p><p>以下是基本的想法，以及一些（比較沒有共識）的備案：</p><p><img src="" alt=""></p><p>所以這在當下對你的意義是什麼？</p><p><strong>給所有人：</strong> 遵守封城規定讓我們能越快脫離第一階段越好、持續洗手、製作你自己的口罩。在下個月<em>保護隱私</em>的接觸追蹤app問世時下載他們。保持身心健康！寫信給你的地方決策者，叫他們開始行動⋯⋯</p><p><strong>給決策者：</strong> 制訂支援需要自主隔離／隔離檢疫的民眾。雇用更多接觸追蹤員，並讓接觸追蹤app<em>協助</em>他們。提供更多資金讓我們可以製作⋯⋯</p><p><strong>給建造者：</strong> 製作測試。製造呼吸器。製造給醫院的個人保護用具。製作測試。製造口罩。開發app。製作抗病毒藥物、預防藥物、和其它非疫苗的治療。製作疫苗。製作測試。製作測試。製作測試。建立希望。</p><p>不要用壓制恐懼來建立希望。我們的恐懼應該和希望用在一起，如同飛機和降落傘的發明人。為恐怖的未來做準備是我們如何 <em>產生</em> 有希望的未來。</p><p>唯一需要恐懼的是唯一需要恐懼的是恐懼的想法。</p><hr class="footnotes-sep"><section class="footnotes">
 	<ol class="footnotes-list">
 	<li id="fn1" class="footnote-item"><p>註腳將包含來源、連結或額外的註解，如同這個註解！</p>
 	<p><strong>這份指南的出版時間為2020年5月1日</strong> ，許多細節將會變得過時，但我們有信心這份指南將包含95%的可能未來，而流行病學101將會永遠有用。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
@@ -306,7 +306,7 @@
 	</li>
 	<li id="fn32" class="footnote-item"><p>「我們觀察到的氣膠降低3.4倍 [減少70%]，加上Johnson等人的研究發現大型飛沫幾乎完全消除，顯示患者帶著醫用口罩可能對疾病傳播產生顯著的臨床影響。」<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/" target="_blank" rel="noopener">Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ</a> <a href="#fnref32" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn33" class="footnote-item"><p>真正的科學家讀到這句話可能會哈哈大笑。見：<a href="https://en.wikipedia.org/wiki/Data_dredging" target="_blank" rel="noopener">p-hacking</a>, <a href="https://en.wikipedia.org/wiki/Replication_crisis" target="_blank" rel="noopener">再現性危機</a>) <a href="#fnref33" class="footnote-backref">↩︎</a></p>
+	<li id="fn33" class="footnote-item"><p>一位真正的科學家讀到這句話可能正在哈哈大笑。見：<a href="https://en.wikipedia.org/wiki/Data_dredging" target="_blank" rel="noopener">p-hacking</a>, <a href="https://en.wikipedia.org/wiki/Replication_crisis" target="_blank" rel="noopener">再現性危機</a>) <a href="#fnref33" class="footnote-backref">↩︎</a></p>
 	</li>
 	<li id="fn34" class="footnote-item"><p>「現在是使用預防原則的時候了。」 <a href="https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf" target="_blank" rel="noopener">Trisha Greenhalgh et al [PDF]</a> <a href="#fnref34" class="footnote-backref">↩︎</a></p>
 	</li>
