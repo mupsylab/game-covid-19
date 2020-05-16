@@ -69,7 +69,7 @@ So, let's make a very, *very* simple "epidemic flight simulator"! In this simula
 
 ![](pics/spread.png)
 
-It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
+It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^_interval] (remember, there's a lot of variation)
 
 經過估計，在 COVID-19 爆發初期，*平均*每四天病毒從一個 <icon i></icon> 傳播到一個 <icon s></icon> [^serial_interval] (記住這有很多變因)
 
@@ -400,13 +400,15 @@ Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwa
 
 增加洗手率在高收入國家能減少約25%的流感與感冒[^handwashing]，而倫敦的全城封鎖減少了約70%的近距離接觸[^london]。所以讓我們假設洗手能將R值降到*最多*25%，而社交距離能降低R值*最多*到70% 
 
-[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful. 「八篇」
+[^handwashing]: 「八篇有效的研究報告均指出洗手能降低呼吸道感染的風險，降低幅度為6%到44% [合併值為 24% （95%信賴區間為6-40%）]」為了方便模擬我們取25%。[Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x)。註：如同這篇統合分析指出，關於洗手研究的研究品質（至少在高收入國家）很糟。
 
-[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: 「我們發現參與者每日接觸到的人平均減少了73%，這將足夠將R0值從封城前的2.6降低至封城期的0.62 (0.37-0.89)」為了方便模擬我們取70%。[Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html) 
 
 **Play with this calculator to see how % of <span class="nowrap">non-<icon s></icon>,</span> handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+**使用這台計算機來觀察<span class="nowrap">非<icon s></icon></span>的百分比、洗手和距離政策如何降低R：** （計算機是將它們之間的*相對*關係視覺化，這就是為什麼提高其中一個*看起來*降低了其它的效應[^log_caveat]）
+
+[^log_caveat]: 如果我們將R用對數尺度畫出來的話，就能避免這層失真⋯⋯但這樣我們就需要解釋什麼是*對數尺度*。
 
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
@@ -414,197 +416,207 @@ Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwa
 
 Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
 
+現在讓我們模擬以下對COVID-19疫情的影響：如果2020年3月增加洗手的比例，搭配些微的社交距離使得R雖然降低了，但仍高於1：
+
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
-
 三點註記：
 
-1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1. 這*降低*了病例總數！**即使沒有達到 R < 1，降低R值仍舊能藉由降低群體免疫以上的病例數來拯救生命。**很多民眾覺得「拉平曲線」只是讓病例發生的時間散開了而沒有降低總數。這在*任何*流行病學101的模型裡都是不可能的。但因為新聞「80%+的人會被感染」報導得好像是不可避免的，民眾以為不管怎樣都沒辦法降低病例總數。*唉。*
 
-2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2. 由於採取了額外的干預措施，目前的病例在「群體免疫」之前達到「高峰」。實際上，在此模擬中，總病例僅比群體面議高*一點點*-這就是英國的計劃！此時 R < 1，不需要其它的干預措施，而且COVID-19的疫情保持控制！ 好吧，除了一個問題...
 
-3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3. 加護病房還是會在幾個月後被用光（而且記得，我們*已經*在這些模擬裡把加護病房數增加3倍。）
 
 That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+
+這是帝國學院3月16日報告的另一個發現，說服英國放棄原本的計畫。任何嘗試**緩和**（降低R但R > 1）疫情的嘗試都將失敗，唯一的解決辦法是**抑制**疫情（將R值降到<1）。
+
 
 ![](pics/mitigation_vs_suppression.png)
 
 That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
 
-###Scenario 2: Months-Long Lockdown
+也就是說不要緊緊「拉平」曲線。「壓扁」它。舉個例子，用⋯⋯
 
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+###場景2：幾個月的封鎖
+
+
+讓我們看看如果我們用5個月長的封鎖將曲線*壓扁*，將<icon i></icon>降到幾乎為0，然後最後——*終於*——回到正常生活：
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 
-Oh.
+喔。
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <span class="nowrap"><icon i></icon>)</span> can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+這就是大家說的「第二波疫情」。一旦解除封鎖，我們將再次得到R > 1。所以任何一條<icon i></icon>漏網之魚（或移入的<span class="nowrap"><icon i></icon>）</span>都會造成病例突然增加，這幾乎和場景0——什麼都不做——一樣糟。
 
-**A lockdown isn't a cure, it's just a restart.**
+**封鎖不是解藥，它只是開始。**
 
-So, what, do we just lockdown again & again?
+那又怎樣，不然我們一直重複封鎖怎樣？
 
-###Scenario 3: Intermittent Lockdown
+###場景3：間歇性封鎖
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+這個解決辦法在帝國學院3月16號的報告第一次被建議，然後再次在哈佛的論文裡被提出來。[^lockdown_harvard]
 
-[^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
+[^lockdown_harvard]: 「在沒有其它干預手段的情況下，社交距離成功的關鍵指標為是否超過了加護病房數量，為了避免這個情況，社交距離可能需要延長或間歇性實施到2022年。」 [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**模擬在這：** （當你嘗試完「預設情況」後，你可以在模擬*運行時*移動滑桿來試試*自己*的封鎖時程！記得你可以暫停和繼續模擬，也可以改變模擬的速率。）
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+這*會讓*病例數低於加護病房容量！而且這比持續至疫苗上市的18個月封鎖要*好多了*。我們只需要⋯⋯封鎖幾個月，解除封鎖幾個月，持續至疫苗問世（而如果一直沒有疫苗，持續至⋯⋯2020年達到群體免疫）。
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+注意，畫一條代表「加護病房容量」的線很好，但在這裡我們有很多重要的事情*沒辦法*模擬，例如：
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**心理健康：** 孤獨是造成憂鬱、焦慮和自殺的重要因子，而且它造成早死的效應等同每天抽15根菸。[^loneliness]
 
-[^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
+[^loneliness]: 見 [Holt-Lunstad & Smith 2010的圖6](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352)。 當然，我們要聲明他們發現的是*相關性*，但除非你想嘗試隨機選取人們讓他們過孤獨的人生，我們只能得到觀察性證據。
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**財政健全：** 「那經濟怎麼辦」聽起來像是你在乎鈔票多餘人命，但是「經濟」不僅限於股票：它還包含了人們提供食物和居所給他們所愛的人的能力、投資孩子的未來、和享受藝術、美食、電玩——那些使人值得活著的事物。除此之外，貧窮*本身*會帶來對身心健康的可怕影響。
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+我們並不是在說我們*不該*再次封鎖！我們將會在之後討論「斷路器式」封鎖，但這仍不是理想的辦法
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
+但等一下⋯⋯台灣和韓國不是*已經*在沒有長期封鎖的情況下遏制COVID-19了嗎？
 
-How?
+它們怎麼做到的？
 
-###Scenario 4: Test, Trace, Isolate
+###場景4：檢驗、追蹤、隔離
 
-*"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+*當然我們\*應該\*在開始的時候跟台灣和韓國做一樣的事情，但現在已經太晚了，我們已經錯過開始的時間。*
 
-But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
 
-To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
+但這就是重點！「封鎖不是解方，它只是重新開始⋯⋯」**而一個全新的開始正是我們需要的。**
 
-[^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
+要了解台灣和南韓遏制疫情的方法，我們需要瞭解一般COVID-19的感染病程[^timeline]:
+
+[^timeline]: **至疾病可傳播平均要3天：**「假設從另一項對COVID-19早期病例的研究，潛伏期的平均值為5.2天，我們以此推斷在病患出現症狀的2.3天前（95%信賴區間 0.8-3.0天）開始具可傳播性。」（翻譯：假設症狀在感染後第5天出現，可傳染性在症狀出現2天前開始＝可傳播性在第3天開始） [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
     
-    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+    **平均4天開始能傳染給別人：**「平均[世代]間隔為3.96天（95%信賴區間3.53-4.39天）。」 [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
     
-    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    **發覺症狀平均需要5天：**「潛伏期的中位數估計為5.1天（95%信賴區間4.5-5.8天）」 [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
-If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
+如果人們在知道他們自己生病了才自主隔離（也就是說他們發覺症狀），那病毒還是能夠散播：
 
 ![](pics/timeline2.png)
 
-And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+而且事實上44%的傳播就是這樣來的：在症狀發生*之前*！ [^pre_symp]
 
-[^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: 「我們估計到44%的次代病例（95%信賴區間25-69%）是在初代病例產生症狀前被感染的。」 [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
-But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
+但如果我們找到*並隔離*出現症狀的病患最近所接觸的人⋯⋯我們就能藉由超前一步來阻止疾病傳播開來！
 
 ![](pics/timeline3.png)
 
 This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
 
-[^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
+這叫做**接觸者追蹤**。它是一個老想法，曾以史無前例的規模被用來遏制伊波拉[^ebola]，如今成為台灣和南韓如何遏制COVID-19的核心部分。
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <span class="nowrap"><icon i></icon>s</span> without needing to test almost everyone.)
+[^ebola]: 「接觸者追蹤是賴比瑞亞的關鍵手段，是歷史上流行期間最大的接觸者追蹤工作之一。」 [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
 
-(This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
+（這也讓我們更有效率地實施我們有限的測試，在不需檢驗幾乎所有人的情況下找到潛伏期患者<icon i></icon>。）
 
-Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps. 傳統上接觸者是在訪問病患的過程中被找到的，但*只利用*這些對COVID-19約48小時窗口來說太慢了。這是為什麼接觸追蹤者需要幫忙，並需要接觸追蹤app的幫助——不是被取代。
 
-Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
+(這個想法並不是來自「科技宅」：最早是[一個牛津流行病學家的團隊]提出使用app來對抗COVID0-19的方案(https://science.sciencemag.org/content/early/2020/04/09/science.abb6936)。)
 
-Here's how it works:
+等等，追蹤你曾接觸過的人的app⋯⋯？這是不是代表放棄隱私權然後交給老大哥？
+
+當然不是！ **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**，一組流行病學家與密碼學家的團隊（包含我們的其中一員Marcel Salathé）*已經*在開發一款接觸追蹤app——原始碼公開給大眾——，它**不會揭露你的身份、位置、和你接觸的人甚至你*曾接觸的人數* **。
+
+以下是它的原理：
 
 ![](pics/dp3t.png)
 
-([Here's the full comic](https://ncase.me/contact-tracing/). Details about "pranking"/false positives/etc in footnote:[^dp3t_details])
+([這裡可見完整的漫畫](https://ncase.me/contact-tracing/)。關於「惡搞」／偽陽性／等等請見註腳：[^dp3t_details])
 
-[^dp3t_details]: To prevent "pranking" (people falsely claiming to be infected), the DP-3T Protocol requires that the hospital first give you a One-Time Passcode that lets you upload your messages.
+[^dp3t_details]: 為了避免「惡搞」（民眾錯誤地聲稱他們被感染），DP-3T協議需要醫院先給你一個一次性的密碼讓你上傳你的資訊。
     
-    False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
+    偽陽性對人工和數位追蹤來說都是問題。但我們仍然可以利用以下兩個辦法來降低偽陽性的出現：1) 只有在Bob聽到例如30+分鐘以上的訊息才通知他們，而不是僅靠一則訊息 2) 如果app*認為*Bob被感染了，那會將Bob交給*人工*追蹤進行進一步的深入追蹤。
     
-    For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
+    其它的議題如資料屏寬、來源完整性和其它的安全性問題，請看[DP-3T的開源白皮書！](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
-Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
+與其他相似的團隊如TCN協議[^tcn]與MIT的PACT[^pact]，他們啟發了蘋果和Google直接將隱私權優先的接觸追蹤植入Android/iOS[^gapple] （不相信Google/蘋果？很好！這個系統美妙的地方是它*不需要*信任！）不久之後，你的地方衛生機構可能會要求你下載一款app，如果它是隱私優先且原始碼公開的軟體，請這麼做！
 
-[^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
+[^tcn]: [Temporary Contact Numbers：一個去中心化、隱私優先的接觸追蹤協議](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
 [^pact]: [PACT: Private Automated Contact Tracing](https://pact.mit.edu/)
 
-[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
+[^gapple]: [蘋果和Google合作開發COVID-19接觸追蹤科技](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/)。注意他們*並沒有自己開發*，他們只是創造一個能支援這些軟體的平台。
 
-But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+但那些沒有智慧型手機的民眾怎麼辦？或者感染源是門把怎麼辦？或「真的」無症狀的病例？接觸追蹤app沒辦法抓到所有的傳染源⋯⋯*沒有關係！*我們不需要抓到*所有的*感染源，只需要60%+即能達到 R < 1。
 
-(Footnote rant about the confusion between pre-symptomatic vs "true" asymptomatic – "true" asymptomatics are rare:[^rant])
+（註腳是關於混淆未產生症狀與「真正的」無症狀感染的抱怨——真正的無症狀感染很罕見：[^rant]）
 
-[^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
+[^rant]: 很多新聞報導——老實說，很多研究論文——沒有區分「在檢測時還沒有症狀的病例（潛伏期患者）」和「*從未*出現症狀的病患（真正的無症狀感染者）」。唯一能區分他們的方法是持續追蹤。
    
-    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    這就是[這篇研究](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article)所做的（聲明：「早期出版的文章不被視為最終版。」）在南韓一間爆發COVID-19的電話客服中心，「只有4例（1.9%）在14天的隔離期維持無症狀，他們的家人都沒有被感染。」
     
-    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
+    所以這代表「真正的無症狀病患」很罕見，而被這些無症狀病患感染更罕見！
 
-Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
+隔離*出現症狀*的病例能將R降低最多40%，而隔離他們處於潛伏期／沒有症狀的接觸者能將R降低最多50%[^oxford]:
 
-[^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
+[^oxford]: 來自同一篇推薦使用app對抗COVID-19的牛津研究：[Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) 見圖2。在假設 R<sub>0</sub> = 2.0的情況下，他們發現： 
     
-    * Symptomatics contribute R = 0.8 (40%)
-    * Pre-symptomatics contribute R = 0.9 (45%)
-    * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-    * Environmental stuff like doorknobs contribute R = 0.2 (10%)
+    * 有症狀患者貢獻0.8給R (40%)
+    * 潛伏期患者貢獻0.9給R (45%)
+    * 無症狀患者貢獻0.1給R (5%，不過他們的模型有不確定性所以這可能低很多)
+    * 環境感染源如門把貢獻0.2給R (10%)
 
-    And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
+    將潛伏期和無症狀患者加起來(45% + 5%)就會得到50%的R！
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
+因此，即使沒有將100%的接觸者隔離起來，我們還是能在*沒有封鎖*的情況下得到 R < 1！對心理健康和財務健康要好多了。（對那些需要自主隔離／隔離檢疫的民眾，*政府應該要補助他們的花費*——包含檢測費用、工作保障、提供有薪假等等。仍然比間歇性封鎖要好多了。）
 
-We then keep R < 1 until we have a vaccine, which turns susceptible <span class="nowrap"><icon s></icon>s</span> into immune <span class="nowrap"><icon r></icon>s.</span> Herd immunity, the *right* way:
+然後我們維持R < 1直到疫苗問世，將可感染的<icon s></icon>變成免疫的<icon r></icon>。用*正確的*方法達到群體免疫： 
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+（註：這個計算器假設疫苗百分之百有效。只要記得在現實中，我們需要施打*大於*「群體免疫」數量的疫苗來*真正*的群體免疫。）
 
-Okay, enough talk. Here's a simulation of:
+好了，廢話夠了。以下是這些情況的模擬：
 
-1. A few-month lockdown, until we can...
-2. Switch to "Test, Trace, Isolate" until we can...
-3. Vaccinate enough people, which means...
-4. We win.
+1. 數個月的封鎖，直到我們可以⋯⋯
+2. 轉變成「檢測、追蹤、隔離」直到我們可以⋯⋯
+3. 給夠多人施打疫苗，這意味著⋯⋯
+4. 我們贏了。
 
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-So that's it! That's how we make an emergency landing on this plane.
+就是這樣！這就是我們如果將飛機緊急迫降。
 
-That's how we beat COVID-19.
+這就是我們如何打敗COVID-19。
 
-...
+⋯⋯
 
-But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
+但如果事情*仍然*往不好的方向發展呢？事情已經很糟了。這是恐懼。這很好！恐懼給我們力量制定*備案*。
 
-The pessimist invents the parachute.
+悲觀者發明降落傘。
 
-###Scenario 4+: Masks For All, Summer, Circuit Breakers
+###場景4+：全民戴口罩、夏天、斷路器
 
-What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
+如果R<sub>0</sub>比我們想的要高得多，而且以上所有的手段，甚至是輕微的距離（？？），*仍沒有*辦法讓 R < 1呢？
 
-Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
+記住，即使我們沒辦法讓 R < 1，降低R值仍然能夠減少病例總數，因此挽救生命。即使是這樣，R < 1仍然是理想的情況，所以這裡提供其他降低R的方法。
 
-**Masks For All:**
+**全民戴口罩：**
 
-*"Wait,"* you might ask, *"I thought face masks don't stop you from getting sick?"*
+*「等等」*你可能想*「我以為口罩沒辦法病免你生病？」*
 
 You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
 
