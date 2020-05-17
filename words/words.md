@@ -53,7 +53,7 @@
 
 **流行病學家使用傳染病模擬器來避免人類滅亡。**
 
-所以讓我們來做一個非常、 *非常* 簡單的「傳染病飛行模擬器」！在這個模擬中 <icon i></icon> 感染者 <icon s></icon> 可以將疾病傳播給易感者，因而產生更多 <icon i></icon> 感染者:
+所以讓我們來做一個非常、 *非常* 簡單的「傳染病飛行模擬器」！在這個模擬中傳染者 <icon i></icon> 可以將疾病傳播給易感者 <icon s></icon> ，因而產生更多傳染者 <icon i></icon> ：
 
 ![](pics/spread.png)
 
@@ -62,20 +62,20 @@
 [^serial_interval]: 「平均世代間隔為3.96天（95%信賴區間為3.53-4.39天）」[Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)（聲明：早期發布文章並不被視為最終版）
 
 
-如果我們 *只用* 「每四天感染者增加一倍」這個條件在只有 0.001% 感染者的初始條件下<span class="nowrap"><icon i></icon>，</span>會發生什麼事？
+如果我們 *只用* 「每四天傳染者增加一倍」這個條件在只有 0.001% 傳染者 <icon i></icon> 的初始條件下，會發生什麼事？
 
 **點擊「開始」來遊玩！你可以在之後以不同的條件再玩一次：** （警告：[^caveats]）
 
 [^caveats]: **記住：所有的模擬都為了教育目的過度簡化**
 
-    其中一個簡化：當你叫這個模擬器「每X天感染1人」，它實際上做的是每天增加1/X個感染者。所以接下來的模擬都是依照這個設定。「每X天復原」的意思是每天減少1/X個感染者。
-    它們的意思 *並不* 完全一樣但已足夠接近，而且比起直接設定傳染率／復原率這比較容易理解並符合教育的宗旨。
+    其中一個簡化：當你叫這個模擬器「每X天傳染1人」，它實際上做的是每天增加1/X個傳染者，接下來的模擬都是依照這個設定。「每X天復原」的意思是每天減少1/X個感染者。
+    它們的意思 *並不* 完全一樣但已足夠接近，而且比起直接設定傳染率／復原率，這比較容易理解並符合教育的宗旨。
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-這是一條 **指數增長的曲線** 。一開始很小、然後爆炸。從「喔這只是流感」到「好啦！流感不會讓富裕的城市出現萬人塚。」
+這是一條 **指數增長的曲線** 。一開始很小、然後爆炸。從「喔這只是流感」到「喔對啦，流感不會讓富裕的城市出現萬人塚。」
 
 ![](pics/exponential.png)
 
@@ -83,7 +83,7 @@
 
 ![](pics/susceptibles.png)
 
-越多 <span class="nowrap"><icon i></icon></span> 的時候, <span class="nowrap"><icon s></icon>s</span> 越快變成 <span class="nowrap"><icon i></icon>，</span>  **但 <span class="nowrap"><icon s></icon>越少的時候</span>，<span class="nowrap"><icon s></icon>s</span>  *越慢* 變成 <span class="nowrap"><icon i></icon>.</span>**
+越多 <icon i></icon> 的時候, <icon s></icon> 越快變成 <icon i></icon>， **但 <icon s></icon> 越少的時候，<icon s></icon>  *越慢* 變成 <icon i></icon> 。**
 
 這如何改變疫情的增長呢？讓我們試試看：
 
@@ -95,9 +95,9 @@
 
 但這個模擬 *依然* 不對，我們忽略患者最後將不再具有感染性，不管是因為患者 1) 復原 2) 帶著肺損傷的「復原」 3) 死亡。
 
-為了簡化問題，我們假設所有的<icon i></icon>患者都將<icon r></icon>復原（只要記得在現實中有些人過世了）。<span class="nowrap"><icon r></icon></span>不再具有感染性，並且讓我們假設—只有現在！—他們終身免疫。
+為了簡化問題，我們假設所有的 <icon i></icon> 都將復原 <icon r></icon>（只要記得在現實中有些人過世了）。 <icon r></icon> 不再會被傳染，並且讓我們假設—只有現在假設！—他們終身免疫。
 
-根據估計，如果你得到 COVID-19，平均來說你有10天具有傳染性。[^infectiousness]這意味著有些人在10天內復原，有些人需要更長的時間。 **這是初始條件為 100% <span class="nowrap"><icon i></icon>長的樣子：</span>**
+根據估計，如果你得到 COVID-19，平均來說你有10天處在傳染期 <icon i></icon> 。[^infectiousness]這意味著有些人在10天內復原，有些人需要更長的時間。 **這是初始條件為 100% <icon i></icon>長的樣子：**
 
 [^infectiousness]: 「可傳播病毒的中位數為9.5天」[Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) 是，我們都知道「中位數」不等於「平均數」，但對於教育目的來說已經足夠接近了。
 
@@ -113,9 +113,9 @@
 
 讓我們來試試看。
 
-<b style='color:#ff4040'>紅色曲線</b> 是 *現存* 病例 <span class="nowrap"><icon i></icon>,</span>    
-<b style='color:#999999'>灰色曲線</b> 是病例 *總數* （現存＋治癒<span class="nowrap"><icon r></icon>），</span>
-開始只有0.001% <span class="nowrap"><icon i></icon>:</span>
+<b style='color:#ff4040'>紅色曲線</b> 是 *現存* 病例 <icon i></icon>，   
+<b style='color:#999999'>灰色曲線</b> 是病例 *總數* （現存＋治癒 <icon r></icon> ），
+開始只有0.001%的 <icon i></icon>：
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
@@ -124,7 +124,7 @@
 這 *正是* 那條有名曲線的由來！它不是鐘形曲線，它甚至不是一條「對數—常態分佈」曲線，它沒有名字，但你見過它無數遍，而且希望它扁下來。
 
 這是 **SIR 模型**,[^sir]    
-(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
+(<icon s></icon>**S**usceptible （易感） <icon i></icon>**I**nfectious （傳染） <icon r></icon>**R**ecovered （復原） )      
 流行病學導論裡*第二重要*的概念：
 
 [^sir]: 想要SIR模型更詳細的描述，請參考 [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) 和 [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
@@ -133,26 +133,26 @@
 
 **註：政策制定所需的模擬比這個 *複雜得多* 了！** 但SIR模型在大方向上仍是正確的，即使少了一些細節。
 
-讓我們再加入一個小細節：在 <icon s></icon> 變成 <span class="nowrap"><icon i></icon>,</span> 之前，他會先變成<icon e></icon>潛伏者。
+讓我們再加入一個小細節：在 <icon s></icon> 變成 <icon i></icon> 之前，他會先變成感染者 <icon e></icon> 。
 
 ![](pics/seir.png)
 
-（這個變體叫做 **SEIR 模型** [^seir]，其中「E」代表「潛伏（Exposed）」<icon e></icon>。請注意這跟日常生活中「暴露於(Exposed)」（不管你有沒有得到病毒）的意思 *並不一樣* 。在這裡，「潛伏」的意思是你一定得到它了。科學用語很爛。）
+（這個變體叫做 **SEIR 模型** [^seir]，其中「E」代表「感染（Exposed）」<icon e></icon>。請注意這跟日常生活中「暴露於(Exposed)」（不管你有沒有得到病毒）的意思 *並不一樣* 。在這裡，「感染」的意思是你一定得到它了。科學用語很爛。）
 
 [^seir]: 對於SEIR更詳細的描述，參見 [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) 和 [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-根據估計，對於COVID-19來說，被感染但仍未具感染性<icon e></icon> 的時間 *平均* 為3天，[^latent]加入這個參數對我們的模擬會產生什麼影響呢？
+根據估計，對於COVID-19來說，一個病人 <icon e></icon> 處於被感染但仍未具傳染性的時間 *平均* 為3天，[^latent]加入這個參數對我們的模擬會產生什麼影響呢？
 
 [^latent]: 「根據另一份對COVID-19病例研究，我們可以假設潛伏期機率分布的平均數為5.2天，並且可以推測在出現症狀的2.3天前（95%信賴區間為0.8-3.0天）病患開始具備可感染性」（翻譯，假設症狀在被感染後第五天出現，病患在出現症狀的兩天前具備可感染性＝可感染性在第三天出現）[He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>紅色 <b style='color:#FF9393'>＋粉紅色</b> 曲線</b> 是 *現存* 病例（具感染性<icon i></icon>＋潛伏<span class="nowrap"><icon e></icon>），</span>    
-<b style='color:#888'>灰色曲線</b> 是病例 *總數* （現存＋康復<span class="nowrap"><icon r></icon>）：</span>
+<b style='color:#ff4040'>紅色 <b style='color:#FF9393'>＋粉紅色</b> 曲線</b> 是 *現存* 病例（傳染 <icon i></icon>＋感染 <icon e></icon>），    
+<b style='color:#888'>灰色曲線</b> 是病例 *總數* （現存＋康復 <icon r></icon>）：
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-差別不大！潛伏期 <icon e></icon> 的長短會改變 <span class="nowrap"><icon e></icon>與<icon i></icon>的比例</span> 和 *現存病例* 高峰出現的時間…，但高峰的 *高度* 和最後的感染總數不會變。
+差別不大！潛伏期 <icon e></icon> 的長短會改變 <icon e></icon> 與 <icon i></icon> 的比例 和 *現存病例* 高峰出現的時間…，但高峰的 *高度* 和最後的感染總數不會變。
 
 為什麼會這樣呢？這是因為流行病學101裡 *最重要* 的概念：
 
@@ -168,7 +168,7 @@
 
 （大部分的新聞文章（甚至某些研究論文！）混淆了R和R<sub>0</sub>。再說一次，科學用語很爛。）
 
-季節性流感的R<sub>0</sub>值大約為1.28[^r0_flu]，這意味著在 *剛剛* 流感爆發的時候，平均一位<icon i></icon>傳染給1.28個人（如果你覺得這是小數很怪的話，記得「平均」一位母親有2.4個孩子，這不代表有半個孩子跑來跑去。）
+季節性流感的R<sub>0</sub>值大約為1.28[^r0_flu]，這意味著在 *剛剛* 流感爆發的時候，平均一位 <icon i></icon> 傳染給1.28個人（如果你覺得這是小數很怪的話，記得「平均」一位母親有2.4個孩子，這不代表有半個孩子跑來跑去。）
 
 [^r0_flu]: 「季節流感的R值為1.28（四分位距1.19-1.37）」[Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
@@ -178,7 +178,7 @@
 
 [^r0_wuhan]: 「我們計算出的平均R<sub>0</sub>值為5.7（95%信賴區間3.8-3.9）」[Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-在我們的模擬中（剛開始和平均來說）一位<icon i></icon>十天裡，每四天會感染一個人。「四天」在「十天」裡經過2.5個週期，也就是說 *（剛開始和平均來說）* 傳染給2.5個人，所以R<sub>0</sub> = 2.5 （警告：[^r0_caveats_sim]）
+在我們的模擬中（剛開始和平均來說）一位 <icon i></icon> 十天裡，每四天會傳染給一個人。「四天」在「十天」裡經過2.5個週期，也就是說 *（剛開始和平均來說）* 傳染給2.5個人，所以R<sub>0</sub> = 2.5 （警告：[^r0_caveats_sim]）
 
 [^r0_caveats_sim]: 這是在患者的可感染性在整個「潛伏期」中保持一致，這再一次是為了教育目的所做的簡化。
 
@@ -188,7 +188,7 @@
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-但記住，<icon s></icon>越少，<icon s></icon> *越慢* 成為<icon i></icon>。 *當下* 的再生數R不只和 *基本* 再生數R<sub>0</sub>有關，也和不再易感<icon s></icon>的人數有關（例如經由康復和得到天然免疫力。）
+但記住， <icon s></icon> 越少， <icon s></icon> *越慢* 成為 <icon i></icon>。 *當下* 的再生數R不只和 *基本* 再生數R<sub>0</sub>有關，也和不再易感 <icon s></icon> 的人數有關（例如經由康復和得到天然免疫力。）
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
@@ -326,7 +326,7 @@
 
 喔。
 
-這就是大家說的「第二波疫情」。一旦解除封鎖，我們將再次得到R > 1。所以任何一條<icon i></icon>漏網之魚（或移入的<span class="nowrap"><icon i></icon>）</span>都會造成病例突然增加，這幾乎和場景0——什麼都不做——一樣糟。
+這就是大家說的「第二波疫情」。一旦解除封鎖，我們將再次得到R > 1。所以任何一條漏網之魚 <icon i></icon>（或移入的<icon i></icon>）都會造成病例突然增加，這幾乎和場景0——什麼都不做——一樣糟。
 
 **封鎖不是解藥，它只是開始。**
 
@@ -470,7 +470,7 @@
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-就是這樣！這就是我們如果將飛機緊急迫降。
+就是這樣！這就是我們如何將飛機緊急迫降。
 
 這就是我們如何打敗COVID-19。
 
@@ -488,7 +488,7 @@
 
 **全民戴口罩：**
 
-*等等* 你可能想 *我以為口罩沒辦法避免人生病？」*
+*等等* 你可能想： *「我以為口罩沒辦法避免人生病？」*
 
 你是對的。口罩沒辦法避免你生病[^incoming]⋯⋯他們避免你將病傳染給 *別人* 。
 
@@ -674,7 +674,7 @@ R = 1, 這是 **流行(endemic)。**
 
 即使在最糟的幾個情況中最壞的那個⋯⋯生命仍能堅持下去。
 
-. . .
+...
 
 也許你想嘗試使用不同的R<sub>0</sub>或數字，或嘗試模擬你*自己的*干預計劃組合來挑戰我們的假設！
 
@@ -695,7 +695,7 @@ R = 1, 這是 **流行(endemic)。**
     </div>
 </div>
 
-墜機了，我們爬上救生筏，現在是找到路地的時後了。[^dry_land]
+墜機了，我們爬上救生筏，現在是找到陸地的時候了。[^dry_land]
 
 [^dry_land]: 陸地的比喻 [來自STAT News上Marc Lipsitch & Yonatan Grad的文章](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 

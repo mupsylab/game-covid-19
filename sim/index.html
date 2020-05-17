@@ -9,7 +9,7 @@
 <body>
 
 	<div id="sandbox">
-	
+
 		<div id="controls">
 
 			<div id="hide_on_first_playthrough">
@@ -18,9 +18,9 @@
 					<i>平均來說</i>,
 					每個<icon i></icon>⋯⋯
 					<br><br>
-					
+
 					<div id="label_transmission">
-						每<span id="label_p_transmission">N</span>天傳染給一個<icon s></icon> 
+						每<span id="label_p_transmission">N</span>天傳染給一個<icon s></icon>
 						<br>
 						<span id="label_transmission_caveat">
 							（在疫情開始的時候）<br>
@@ -34,14 +34,14 @@
 						<br>
 						<input class="sim_input" type="range" id="p_exposed" min="1" max="30" step="1" value="3">
 					</div>
-					
+
 					<div id="label_c_recovery">
 						<input class="sim_checkbox" type="checkbox" id="c_recovery">
 						從<icon i></icon>到<icon r></icon>需要花<span id="label_p_recovery">N</span>天
 						<br>
 						<input class="sim_input" type="range" id="p_recovery" min="1" max="30" step="1" value="10">
 					</div>
-					
+
 					<div id="label_c_waning">
 						<input class="sim_checkbox" type="checkbox" id="c_waning">
 						在<span id="label_p_waning">N</span>失去免疫力<icon s></icon>
@@ -180,7 +180,7 @@
 				-->
 			</div>
 			<div id="legend">
-				
+
 				<span id="label_susceptible" class="lines">
 					<icon s></icon> 易感<span id="show_percent_s"></span>
 					<br>
@@ -190,21 +190,21 @@
 					<br>
 				</span>
 				<span id="label_infectious" class="lines">
-					<icon i></icon> 可傳播<span id="show_percent_i"></span>
+					<icon i></icon> 傳染<span id="show_percent_i"></span>
 					<br>
 				</span>
 				<span id="label_removed" class="lines">
 					<icon r></icon> 復原<span id="show_percent_r"></span>
 				</span>
-				
+
 				<br class="lines">
-				
+
 				<span id="label_herd_immunity">
 				- - - 群體免疫
 				</span>
 
 				<br class="lines">
-				
+
 				<span id="label_capacity">
 				––– 加護病房容量
 				</span>
@@ -230,8 +230,8 @@
 				<span id="pointer_replay">
 					這個模擬有「預設情景」！
 					<br>
+					在你改變數字<i>之前</i>
 					點擊「開始」來觀看預設情況
-					在你改變數字之前<i>before</i>
 				</span>
 			</div>
 		</div>
@@ -263,4 +263,3 @@
 <script src="js/main.js"></script>
 
 <script src="js/simplebar.min.js"></script>
-

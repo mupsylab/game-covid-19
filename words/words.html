@@ -39,27 +39,27 @@
 </div>
 <p>飛行員用飛行模擬器來避免如何避免飛機失事。</p>
 <p><strong>流行病學家使用傳染病模擬器來避免人類滅亡。</strong></p>
-<p>所以讓我們來做一個非常、 <em>非常</em> 簡單的「傳染病飛行模擬器」！在這個模擬中 <icon i></icon> 感染者 <icon s></icon> 可以將疾病傳播給易感者，因而產生更多 <icon i></icon> 感染者:</p>
+<p>所以讓我們來做一個非常、 <em>非常</em> 簡單的「傳染病飛行模擬器」！在這個模擬中傳染者 <icon i></icon> 可以將疾病傳播給易感者 <icon s></icon> ，因而產生更多傳染者 <icon i></icon> ：</p>
 <p><img src="pics/spread.png" /></p>
 <p>經過估計，在 COVID-19 爆發初期， <em>平均</em> 每四天病毒從一個 <icon i></icon> 傳播到一個 <icon s></icon> <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> (記住這有很多變因)</p>
-<p>如果我們 <em>只用</em> 「每四天感染者增加一倍」這個條件在只有 0.001% 感染者的初始條件下<span class="nowrap"><icon i></icon>，</span>會發生什麼事？</p>
+<p>如果我們 <em>只用</em> 「每四天傳染者增加一倍」這個條件在只有 0.001% 傳染者 <icon i></icon> 的初始條件下，會發生什麼事？</p>
 <p><strong>點擊「開始」來遊玩！你可以在之後以不同的條件再玩一次：</strong> （警告：<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>）</p>
 <div class="sim">
         <iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
-<p>這是一條 <strong>指數增長的曲線</strong> 。一開始很小、然後爆炸。從「喔這只是流感」到「好啦！流感不會讓富裕的城市出現萬人塚。」</p>
+<p>這是一條 <strong>指數增長的曲線</strong> 。一開始很小、然後爆炸。從「喔這只是流感」到「喔對啦，流感不會讓富裕的城市出現萬人塚。」</p>
 <p><img src="pics/exponential.png" /></p>
 <p>但這個模擬是錯的。幸好指數增長不能永遠持續。其中一件阻止病毒傳播的因素是其他人是否 <em>已經</em> 得到這個病毒。</p>
 <p><img src="pics/susceptibles.png" /></p>
-<p>越多 <span class="nowrap"><icon i></icon></span> 的時候, <span class="nowrap"><icon s></icon>s</span> 越快變成 <span class="nowrap"><icon i></icon>，</span> <strong>但 <span class="nowrap"><icon s></icon>越少的時候</span>，<span class="nowrap"><icon s></icon>s</span> <em>越慢</em> 變成 <span class="nowrap"><icon i></icon>.</span></strong></p>
+<p>越多 <icon i></icon> 的時候, <icon s></icon> 越快變成 <icon i></icon>， <strong>但 <icon s></icon> 越少的時候，<icon s></icon> <em>越慢</em> 變成 <icon i></icon> 。</strong></p>
 <p>這如何改變疫情的增長呢？讓我們試試看：</p>
 <div class="sim">
         <iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 <p>這是一條「S型」的 <strong>邏輯增長曲線（logistic growth curve）</strong> ，一開始很小、爆炸性增長、然後增長重新慢下來。</p>
 <p>但這個模擬 <em>依然</em> 不對，我們忽略患者最後將不再具有感染性，不管是因為患者 1) 復原 2) 帶著肺損傷的「復原」 3) 死亡。</p>
-<p>為了簡化問題，我們假設所有的<icon i></icon>患者都將<icon r></icon>復原（只要記得在現實中有些人過世了）。<span class="nowrap"><icon r></icon></span>不再具有感染性，並且讓我們假設—只有現在！—他們終身免疫。</p>
-<p>根據估計，如果你得到 COVID-19，平均來說你有10天具有傳染性。<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>這意味著有些人在10天內復原，有些人需要更長的時間。 <strong>這是初始條件為 100% <span class="nowrap"><icon i></icon>長的樣子：</span></strong></p>
+<p>為了簡化問題，我們假設所有的 <icon i></icon> 都將復原 <icon r></icon>（只要記得在現實中有些人過世了）。 <icon r></icon> 不再會被傳染，並且讓我們假設—只有現在假設！—他們終身免疫。</p>
+<p>根據估計，如果你得到 COVID-19，平均來說你有10天處在傳染期 <icon i></icon> 。<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>這意味著有些人在10天內復原，有些人需要更長的時間。 <strong>這是初始條件為 100% <icon i></icon>長的樣子：</strong></p>
 <div class="sim">
         <iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
@@ -67,27 +67,27 @@
 <p>那如果我們把「復原」這個條件加入S型邏輯增長的模擬中，會發生什麼事呢？</p>
 <p><img src="pics/graphs_q.png" /></p>
 <p>讓我們來試試看。</p>
-<p><b style='color:#ff4040'>紅色曲線</b> 是 <em>現存</em> 病例 <span class="nowrap"><icon i></icon>,</span><br />
-<b style='color:#999999'>灰色曲線</b> 是病例 <em>總數</em> （現存＋治癒<span class="nowrap"><icon r></icon>），</span> 開始只有0.001% <span class="nowrap"><icon i></icon>:</span></p>
+<p><b style='color:#ff4040'>紅色曲線</b> 是 <em>現存</em> 病例 <icon i></icon>，<br />
+<b style='color:#999999'>灰色曲線</b> 是病例 <em>總數</em> （現存＋治癒 <icon r></icon> ）， 開始只有0.001%的 <icon i></icon>：</p>
 <div class="sim">
         <iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 <p>這 <em>正是</em> 那條有名曲線的由來！它不是鐘形曲線，它甚至不是一條「對數—常態分佈」曲線，它沒有名字，但你見過它無數遍，而且希望它扁下來。</p>
 <p>這是 <strong>SIR 模型</strong>,<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><br />
-(<icon s></icon><strong>S</strong>usceptible <icon i></icon><strong>I</strong>nfectious <icon r></icon><strong>R</strong>ecovered)<br />
+(<icon s></icon><strong>S</strong>usceptible （易感） <icon i></icon><strong>I</strong>nfectious （傳染） <icon r></icon><strong>R</strong>ecovered （復原） )<br />
 流行病學導論裡<em>第二重要</em>的概念：</p>
 <p><img src="pics/sir.png" /></p>
 <p><strong>註：政策制定所需的模擬比這個 <em>複雜得多</em> 了！</strong> 但SIR模型在大方向上仍是正確的，即使少了一些細節。</p>
-<p>讓我們再加入一個小細節：在 <icon s></icon> 變成 <span class="nowrap"><icon i></icon>,</span> 之前，他會先變成<icon e></icon>潛伏者。</p>
+<p>讓我們再加入一個小細節：在 <icon s></icon> 變成 <icon i></icon> 之前，他會先變成感染者 <icon e></icon> 。</p>
 <p><img src="pics/seir.png" /></p>
-<p>（這個變體叫做 <strong>SEIR 模型</strong> <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>，其中「E」代表「潛伏（Exposed）」<icon e></icon>。請注意這跟日常生活中「暴露於(Exposed)」（不管你有沒有得到病毒）的意思 <em>並不一樣</em> 。在這裡，「潛伏」的意思是你一定得到它了。科學用語很爛。）</p>
-<p>根據估計，對於COVID-19來說，被感染但仍未具感染性<icon e></icon> 的時間 <em>平均</em> 為3天，<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>加入這個參數對我們的模擬會產生什麼影響呢？</p>
-<p><b style='color:#ff4040'>紅色 <b style='color:#FF9393'>＋粉紅色</b> 曲線</b> 是 <em>現存</em> 病例（具感染性<icon i></icon>＋潛伏<span class="nowrap"><icon e></icon>），</span><br />
-<b style='color:#888'>灰色曲線</b> 是病例 <em>總數</em> （現存＋康復<span class="nowrap"><icon r></icon>）：</span></p>
+<p>（這個變體叫做 <strong>SEIR 模型</strong> <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>，其中「E」代表「感染（Exposed）」<icon e></icon>。請注意這跟日常生活中「暴露於(Exposed)」（不管你有沒有得到病毒）的意思 <em>並不一樣</em> 。在這裡，「感染」的意思是你一定得到它了。科學用語很爛。）</p>
+<p>根據估計，對於COVID-19來說，一個病人 <icon e></icon> 處於被感染但仍未具傳染性的時間 <em>平均</em> 為3天，<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>加入這個參數對我們的模擬會產生什麼影響呢？</p>
+<p><b style='color:#ff4040'>紅色 <b style='color:#FF9393'>＋粉紅色</b> 曲線</b> 是 <em>現存</em> 病例（傳染 <icon i></icon>＋感染 <icon e></icon>），<br />
+<b style='color:#888'>灰色曲線</b> 是病例 <em>總數</em> （現存＋康復 <icon r></icon>）：</p>
 <div class="sim">
         <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
-<p>差別不大！潛伏期 <icon e></icon> 的長短會改變 <span class="nowrap"><icon e></icon>與<icon i></icon>的比例</span> 和 <em>現存病例</em> 高峰出現的時間…，但高峰的 <em>高度</em> 和最後的感染總數不會變。</p>
+<p>差別不大！潛伏期 <icon e></icon> 的長短會改變 <icon e></icon> 與 <icon i></icon> 的比例 和 <em>現存病例</em> 高峰出現的時間…，但高峰的 <em>高度</em> 和最後的感染總數不會變。</p>
 <p>為什麼會這樣呢？這是因為流行病學101裡 <em>最重要</em> 的概念：</p>
 <p><img src="pics/r.png" /></p>
 <p>「再生數（Reproduction number）」的縮寫。這是一位<icon i></icon>在 <em>康復前</em> （或死亡前）傳染的平均人數。</p>
@@ -95,14 +95,14 @@
 <p>因著更多人免疫和人為干預， <strong>R</strong> 隨著疾病爆發的過程發生變化。</p>
 <p><strong>R<sub>0</sub></strong> （唸作 R-nought）是R在疾病剛爆發時（未有免疫及干預）的值，R<sub>0</sub>比較能反映病毒本身的感染力，但仍因地而異。舉例來說， R<sub>0</sub>在人口稠密的都市比在人煙稀少的地方高。</p>
 <p>（大部分的新聞文章（甚至某些研究論文！）混淆了R和R<sub>0</sub>。再說一次，科學用語很爛。）</p>
-<p>季節性流感的R<sub>0</sub>值大約為1.28<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>，這意味著在 <em>剛剛</em> 流感爆發的時候，平均一位<icon i></icon>傳染給1.28個人（如果你覺得這是小數很怪的話，記得「平均」一位母親有2.4個孩子，這不代表有半個孩子跑來跑去。）</p>
+<p>季節性流感的R<sub>0</sub>值大約為1.28<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>，這意味著在 <em>剛剛</em> 流感爆發的時候，平均一位 <icon i></icon> 傳染給1.28個人（如果你覺得這是小數很怪的話，記得「平均」一位母親有2.4個孩子，這不代表有半個孩子跑來跑去。）</p>
 <p>新冠病毒的R<sub>0</sub>估計為2.2<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> ，雖然一份還未定稿的研究估計在武漢的R<sub>0</sub>值為5.5（！）<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>。</p>
-<p>在我們的模擬中（剛開始和平均來說）一位<icon i></icon>十天裡，每四天會感染一個人。「四天」在「十天」裡經過2.5個週期，也就是說 <em>（剛開始和平均來說）</em> 傳染給2.5個人，所以R<sub>0</sub> = 2.5 （警告：<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>）</p>
+<p>在我們的模擬中（剛開始和平均來說）一位 <icon i></icon> 十天裡，每四天會傳染給一個人。「四天」在「十天」裡經過2.5個週期，也就是說 <em>（剛開始和平均來說）</em> 傳染給2.5個人，所以R<sub>0</sub> = 2.5 （警告：<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>）</p>
 <p><strong>玩玩看這個R<sub>0</sub>計算機，看看R<sub>0</sub>和康復時間和感染他人的時間的關係為何。</strong></p>
 <div class="sim">
         <iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
-<p>但記住，<icon s></icon>越少，<icon s></icon> <em>越慢</em> 成為<icon i></icon>。 <em>當下</em> 的再生數R不只和 <em>基本</em> 再生數R<sub>0</sub>有關，也和不再易感<icon s></icon>的人數有關（例如經由康復和得到天然免疫力。）</p>
+<p>但記住， <icon s></icon> 越少， <icon s></icon> <em>越慢</em> 成為 <icon i></icon>。 <em>當下</em> 的再生數R不只和 <em>基本</em> 再生數R<sub>0</sub>有關，也和不再易感 <icon s></icon> 的人數有關（例如經由康復和得到天然免疫力。）</p>
 <div class="sim">
         <iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
@@ -168,7 +168,7 @@
         <iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 <p>喔。</p>
-<p>這就是大家說的「第二波疫情」。一旦解除封鎖，我們將再次得到R &gt; 1。所以任何一條<icon i></icon>漏網之魚（或移入的<span class="nowrap"><icon i></icon>）</span>都會造成病例突然增加，這幾乎和場景0——什麼都不做——一樣糟。</p>
+<p>這就是大家說的「第二波疫情」。一旦解除封鎖，我們將再次得到R &gt; 1。所以任何一條漏網之魚 <icon i></icon>（或移入的<icon i></icon>）都會造成病例突然增加，這幾乎和場景0——什麼都不做——一樣糟。</p>
 <p><strong>封鎖不是解藥，它只是開始。</strong></p>
 <p>那又怎樣，不然我們一直重複封鎖怎樣？</p>
 <h3>場景3：間歇性封鎖</h3>
@@ -226,7 +226,7 @@
 <div class="sim">
         <iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
-<p>就是這樣！這就是我們如果將飛機緊急迫降。</p>
+<p>就是這樣！這就是我們如何將飛機緊急迫降。</p>
 <p>這就是我們如何打敗COVID-19。</p>
 <p>...</p>
 <p>但如果事情 <em>仍然</em> 往不好的方向發展呢？事情已經很糟了。這是恐懼。這很好！恐懼給我們力量制定 <em>備案</em> 。</p>
@@ -235,7 +235,7 @@
 <p>如果R<sub>0</sub>比我們想的要高得多，而且以上所有的手段，甚至是輕微的距離規範，<em>仍沒有</em>辦法讓 R &lt; 1呢？</p>
 <p>記住，即使我們沒辦法讓 R &lt; 1，降低R值仍然能夠減少病例總數，因此挽救生命。即使是這樣，R &lt; 1仍然是理想的情況，所以這裡提供其他降低R的方法。</p>
 <p><strong>全民戴口罩：</strong></p>
-<p><em>等等</em> 你可能想 <em>我以為口罩沒辦法避免人生病？」</em></p>
+<p><em>等等</em> 你可能想： <em>「我以為口罩沒辦法避免人生病？」</em></p>
 <p>你是對的。口罩沒辦法避免你生病<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a>⋯⋯他們避免你將病傳染給 <em>別人</em> 。</p>
 <p><img src="pics/masks.png" /></p>
 <p>我們把這些效應量化： <em>患者戴口罩</em> 減低感冒和流感病毒氣膠的70%。<a href="#fn32" class="footnote-ref" id="fnref32" role="doc-noteref"><sup>32</sup></a>傳染率減低70%代表和封城的效應一樣大！</p>
@@ -334,7 +334,7 @@
         <iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 <p>即使在最糟的幾個情況中最壞的那個⋯⋯生命仍能堅持下去。</p>
-<div class="incremental">
+<p>...</p>
 <p>也許你想嘗試使用不同的R<sub>0</sub>或數字，或嘗試模擬你<em>自己的</em>干預計劃組合來挑戰我們的假設！</p>
 <p><strong>接下來模擬是沙盒模式， <em>所有的</em> 參數都列出來，（滑動來看到所有的參數）模擬和常識你心中的想法：</strong></p>
 <div class="sim">
@@ -348,7 +348,7 @@
         <div>現在</div>
     </div>
 </div>
-<p>墜機了，我們爬上救生筏，現在是找到路地的時後了。<a href="#fn45" class="footnote-ref" id="fnref45" role="doc-noteref"><sup>45</sup></a></p>
+<p>墜機了，我們爬上救生筏，現在是找到陸地的時候了。<a href="#fn45" class="footnote-ref" id="fnref45" role="doc-noteref"><sup>45</sup></a></p>
 <p>許多流行學家和政策制定者的團隊（<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">左派</a>、<a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">右派</a>和<a href="https://ethics.harvard.edu/covid-roadmap">跨黨派</a>）已經達成在保全我們的生活 <em>及</em> 自由的前提下，如何打敗COVID-19的共識。</p>
 <p>以下是基本的想法，以及一些（比較沒有共識）的備案：</p>
 <p><img src="pics/plan.png" /></p>
@@ -358,7 +358,6 @@
 <p><strong>給建造者：</strong> 製作測試。製造呼吸器。製造給醫院的個人保護用具。製作測試。製造口罩。開發app。製作抗病毒藥物、預防藥物、和其它非疫苗的治療。製作疫苗。製作測試。製作測試。製作測試。建立希望。</p>
 <p>不要用壓制恐懼來建立希望。我們的恐懼應該和希望用在一起，如同飛機和降落傘的發明人。為恐怖的未來做準備是我們如何 <em>產生</em> 有希望的未來。</p>
 <p>唯一需要恐懼的是唯一需要恐懼的是恐懼的想法。</p>
-</div>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
@@ -366,7 +365,7 @@
 <p><strong>這份指南的出版時間為2020年5月1日</strong> ，許多細節將會變得過時，但我們有信心這份指南將包含95%的可能未來，而流行病學101將會永遠有用。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2" role="doc-endnote"><p>「平均世代間隔為3.96天（95%信賴區間為3.53-4.39天）」<a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article">Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L</a>（聲明：早期發布文章並不被視為最終版）<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3" role="doc-endnote"><p><strong>記住：所有的模擬都為了教育目的過度簡化</strong></p>
-<p>其中一個簡化：當你叫這個模擬器「每X天感染1人」，它實際上做的是每天增加1/X個感染者。所以接下來的模擬都是依照這個設定。「每X天復原」的意思是每天減少1/X個感染者。 它們的意思 <em>並不</em> 完全一樣但已足夠接近，而且比起直接設定傳染率／復原率這比較容易理解並符合教育的宗旨。<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<p>其中一個簡化：當你叫這個模擬器「每X天傳染1人」，它實際上做的是每天增加1/X個傳染者，接下來的模擬都是依照這個設定。「每X天復原」的意思是每天減少1/X個感染者。 它們的意思 <em>並不</em> 完全一樣但已足夠接近，而且比起直接設定傳染率／復原率，這比較容易理解並符合教育的宗旨。<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4" role="doc-endnote"><p>「可傳播病毒的中位數為9.5天」<a href="https://link.springer.com/article/10.1007/s11427-020-1661-4">Hu, Z., Song, C., Xu, C. et al</a> 是，我們都知道「中位數」不等於「平均數」，但對於教育目的來說已經足夠接近了。<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5" role="doc-endnote"><p>想要SIR模型更詳細的描述，請參考 <a href="https://www.idmod.org/docs/hiv/model-sir.html#">the Institute for Disease Modeling</a> 和 <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model">Wikipedia</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6" role="doc-endnote"><p>對於SEIR更詳細的描述，參見 <a href="https://www.idmod.org/docs/hiv/model-seir.html">the Institute for Disease Modeling</a> 和 <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model">Wikipedia</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
