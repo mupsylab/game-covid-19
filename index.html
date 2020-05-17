@@ -105,7 +105,7 @@
 	<li><strong>接下來的幾個月</strong>（封鎖、接觸追蹤、口罩）</li>
 	<li><strong>接下來的數年</strong>（失去免疫力？沒有疫苗？）</li>
 	</ul>
-	<p>這份指南（2020年5月1日出版，點擊註腳！→<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>）的主旨是要給你盼望和恐懼。為了以 <strong>確保我們心理健康及財政健全</strong> 的方式打敗新冠病毒，我們需要樂觀地制定計劃，並且悲觀地制定備案。正如 Gladys Brownwyn Stern 曾說過的：「樂觀者發明飛機而悲觀者發明降落傘。」</p>
+	<p>這份指南（2020年5月1日出版，點擊註腳！→<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>）的主旨是要給你盼望和恐懼。為了以 <strong>確保我們心理健康及財政健全</strong> 的方式打敗新冠病毒，我們需要樂觀地制定計劃，並且悲觀地制定備案。正如 Gladys Brownwyn Stern 曾說過的：「樂觀者發明飛機，悲觀者發明降落傘。」</p>
 	<p>所以請繫好安全帶，我們將遭遇亂流。</p>
 	<div class="section chapter">
 	    <div>
@@ -133,7 +133,7 @@
 	        <iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 	</div>
 	<p>這是一條「S型」的 <strong>邏輯增長曲線（logistic growth curve）</strong> ，一開始很小、爆炸性增長、然後增長重新慢下來。</p>
-	<p>但這個模擬 <em>依然</em> 不對，我們忽略患者最後將不再具有感染性，不管是因為患者 1) 復原 2) 帶著肺損傷的「復原」 3) 死亡。</p>
+	<p>但這個模擬 <em>依然</em> 不對，我們忽略患者最後將不再具有傳染性，不管是因為患者 1) 復原 2) 帶著肺損傷的「復原」 3) 死亡。</p>
 	<p>為了簡化問題，我們假設所有的 <icon i></icon> 都將復原 <icon r></icon>（只要記得在現實中有些人過世了）。 <icon r></icon> 不再會被傳染，並且讓我們假設—只有現在假設！—他們終身免疫。</p>
 	<p>根據估計，如果你得到 COVID-19，平均來說你有10天處在傳染期 <icon i></icon> 。<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>這意味著有些人在10天內復原，有些人需要更長的時間。 <strong>這是初始條件為 100% <icon i></icon>長的樣子：</strong></p>
 	<div class="sim">
@@ -163,7 +163,7 @@
 	<div class="sim">
 	        <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 	</div>
-	<p>差別不大！潛伏期 <icon e></icon> 的長短會改變 <icon e></icon> 與 <icon i></icon> 的比例 和 <em>現存病例</em> 高峰出現的時間…，但高峰的 <em>高度</em> 和最後的感染總數不會變。</p>
+	<p>差別不大！<icon e></icon> 處在潛伏期的長短會改變 <icon e></icon> 與 <icon i></icon> 的比例 和 <em>現存病例</em> 高峰出現的時間…，但高峰的 <em>高度</em> 和最後的感染總數不會變。</p>
 	<p>為什麼會這樣呢？這是因為流行病學101裡 <em>最重要</em> 的概念：</p>
 	<p><img src="pics/r.png" /></p>
 	<p>「再生數（Reproduction number）」的縮寫。這是一位<icon i></icon>在 <em>康復前</em> （或死亡前）傳染的平均人數。</p>
@@ -172,7 +172,7 @@
 	<p><strong>R<sub>0</sub></strong> （唸作 R-nought）是R在疾病剛爆發時（未有免疫及干預）的值，R<sub>0</sub>比較能反映病毒本身的感染力，但仍因地而異。舉例來說， R<sub>0</sub>在人口稠密的都市比在人煙稀少的地方高。</p>
 	<p>（大部分的新聞文章（甚至某些研究論文！）混淆了R和R<sub>0</sub>。再說一次，科學用語很爛。）</p>
 	<p>季節性流感的R<sub>0</sub>值大約為1.28<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>，這意味著在 <em>剛剛</em> 流感爆發的時候，平均一位 <icon i></icon> 傳染給1.28個人（如果你覺得這是小數很怪的話，記得「平均」一位母親有2.4個孩子，這不代表有半個孩子跑來跑去。）</p>
-	<p>新冠病毒的R<sub>0</sub>估計為2.2<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> ，雖然一份還未定稿的研究估計在武漢的R<sub>0</sub>值為5.5（！）<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>。</p>
+	<p>2019-新型冠狀病毒的R<sub>0</sub>估計為2.2<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> ，雖然一份還未定稿的研究估計在武漢的R<sub>0</sub>值為5.5（！）<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>。</p>
 	<p>在我們的模擬中（剛開始和平均來說）一位 <icon i></icon> 十天裡，每四天會傳染給一個人。「四天」在「十天」裡經過2.5個週期，也就是說 <em>（剛開始和平均來說）</em> 傳染給2.5個人，所以R<sub>0</sub> = 2.5 （警告：<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>）</p>
 	<p><strong>玩玩看這個R<sub>0</sub>計算機，看看R<sub>0</sub>和康復時間和感染他人的時間的關係為何。</strong></p>
 	<div class="sim">
@@ -188,13 +188,13 @@
 	        <iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 	</div>
 	<p><strong>註：病例總數並不會停在得到群體免疫的時間點，而是在這之後！而且群體免疫 <em>正是在</em> 現存病例的最高峰時產生的（這件事不隨參數改變，你自己試試看！）</strong></p>
-	<p>這是因為當<span class="nowrap">非<icon s></icon></span>大於群體免疫閥值的時候你會得到 R&lt;1 ，而當 R&lt;1 時候，新病例的增長速度減慢：也就是高峰。</p>
+	<p>這是因為當<span class="nowrap">非<icon s></icon></span>大於群體免疫閥值的時候你會得到 R&lt;1 ，而當 R&lt;1 時候，新病例的增長速度減慢：也就是最高峰。</p>
 	<p><strong>如果你只能從這份指南學到一件事的話，就是這件事</strong> ——這是一個非常複雜的圖，所以請花時間好好吸收它：</p>
 	<p><img src="pics/r3.png" /></p>
 	<p><strong>這代表：我們不需要找到所有或幾乎所有傳染途徑來阻止COVID-19！</strong></p>
-	<p>這是個悖論，COVID-19的傳染性超級高，但我們「只需」降低60%的傳染就能遏止它。60%？！如果換算成學校成績的話，那代表D-，但如果R<sub>0</sub>=2.5的話，減少61%的傳染會讓我們得到R=0.975，也就是 R&lt;1。病毒被遏制住了！（正確的公式：<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>）</p>
+	<p>這是個悖論，COVID-19的傳染性超級高，但我們「只需」降低60%的傳染就能遏止它。60%？！如果換算成學校成績的話，那代表D-的意思，但如果R<sub>0</sub>=2.5的話，減少61%的傳染會讓我們得到R=0.975，也就是 R&lt;1。病毒被遏制住了！（正確的公式：<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>）</p>
 	<p><img src="pics/r4.png" /></p>
-	<p>（如果你覺得 R<sub>0</sub>或模擬裡其它數字太低／太高的話，這很好因為你正在挑戰我們的假設！在這份指南的結尾我們提供一個「沙盒模式」，你可以在那裡試試 <em>你自己</em> 的數字然後看看會發生什麼。）</p>
+	<p>（如果你覺得 R<sub>0</sub>或模擬裡其它數字太低／太高的話，這很好，你在挑戰我們的假設！在這份指南的結尾我們提供一個「沙盒模式」，你可以在那裡試試 <em>你自己</em> 的數字然後看看會發生什麼。）</p>
 	<p><em>所有</em>你聽過阻擋COVID-19的手段——洗手、社交／肢體距離、封鎖、自主隔離、接觸追蹤和隔離檢疫、戴口罩甚至「群體免疫」——它們都是為了同一件事：</p>
 	<p>讓 R &lt; 1。</p>
 	<p>所以現在讓我們的「流行病飛行模擬器」來解答：如果在確保 <strong>心理健康 <em>和</em> 財政健全的情況下</strong> 讓 R &lt; 1？</p>
@@ -217,7 +217,7 @@
 	<p>即使只有0.5%的感染者死亡 <a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> ——在沒有加護病房下很寬鬆的假設——在如美國一樣擁有3億人口的大國，3億中的80%中的0.5%仍代表一百二十萬人死亡⋯⋯ <em>如果我們什麼都不做的話。</em></p>
 	<p>（許多新聞或社群媒體報導「80%會被感染」卻不講 <strong>我們什麼都不做</strong> 。恐懼被轉化為點擊數而非理解。 <em>唉</em> ）</p>
 	<h3>場景 1: 拉平曲線／群體免疫</h3>
-	<p>所有的公共衛生機構都在宣傳「拉平曲線」計畫，然而英國原本的「群體免疫」計畫卻受到滿堂倒彩。它們是 <em>一樣的計畫。</em> 只是英國傳達地很糟。<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
+	<p>所有的公共衛生機構都在宣傳「拉平曲線」計畫，然而英國原本的「群體免疫」計畫卻受到滿堂倒彩。它們是 <em>一樣的計畫。</em> 只是英國政府的公關能力很糟。<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
 	<p>然而兩者皆具有致命的缺陷。</p>
 	<p>首先讓我們先來看一樣兩種主要「拉平曲線」的方法：洗手和肢體距離。</p>
 	<p>增加洗手率在高收入國家能減少約25%的流感與感冒<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a>，而倫敦的全城封鎖減少了約70%的近距離接觸<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>。所以讓我們假設洗手能將R值降到 <em>最多</em> 25%，而社交距離能降低R值 <em>最多</em> 到70%</p>
@@ -244,7 +244,7 @@
 	        <iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 	</div>
 	<p>喔。</p>
-	<p>這就是大家說的「第二波疫情」。一旦解除封鎖，我們將再次得到R &gt; 1。所以任何一條漏網之魚 <icon i></icon>（或移入的<icon i></icon>）都會造成病例突然增加，這幾乎和場景0——什麼都不做——一樣糟。</p>
+	<p>這就是大家說的「第二波疫情」：一旦解除封鎖，我們將再次得到R &gt; 1。所以任何一條漏網之魚 <icon i></icon>（或移入的<icon i></icon>）都會造成病例突然增加，這幾乎和場景0——什麼都不做——一樣糟。</p>
 	<p><strong>封鎖不是解藥，它只是開始。</strong></p>
 	<p>那又怎樣，不然我們一直重複封鎖怎樣？</p>
 	<h3>場景3：間歇性封鎖</h3>
@@ -268,10 +268,10 @@
 	<p>如果人們在知道他們自己生病了才自主隔離（也就是說他們發覺症狀），那病毒還是能夠散播：</p>
 	<p><img src="pics/timeline2.png" /></p>
 	<p>而且事實上44%的傳播就是這樣來的：在症狀發生<em>之前</em>！ <a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
-	<p>但如果我們找到 <em>並隔離</em> 出現症狀的病患最近所接觸的人⋯⋯我們就能藉由超前一步來阻止疾病傳播開來！</p>
+	<p>但如果我們找到 <em>並隔離</em> 出現症狀的病患最近所接觸的人⋯⋯我們就能藉由超前部署來阻止疾病傳播開來！</p>
 	<p><img src="pics/timeline3.png" /></p>
-	<p>這叫做 <strong>接觸者追蹤</strong> 。它是一個老想法，曾以史無前例的規模被用來遏制伊波拉 <a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> ，如今成為台灣和南韓如何遏制COVID-19的核心部分。</p>
-	<p>（這也讓我們更有效率地實施我們有限的測試，在不需檢驗幾乎所有人的情況下找到潛伏期患者<icon i></icon>。）</p>
+	<p>這叫做 <strong>接觸者追蹤</strong> 。它是一個老想法，曾以史無前例的規模被用來遏制伊波拉 <a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> ，如今成為台灣和南韓遏制COVID-19的核心部分。</p>
+	<p>（這也讓我們更有效率地實施我們有限的測試，在不需檢驗幾乎所有人的情況下找到處於傳染期的患者<icon i></icon>。）</p>
 	<p>傳統上接觸者是在訪問病患的過程中被找到的，但<em>只利用</em>這些對COVID-19約48小時窗口來說太慢了。這是為什麼接觸追蹤者需要幫忙，並需要接觸追蹤app的幫助——不是被取代。</p>
 	<p>(這個想法並不是來自「科技宅」：最早是<a href="https://science.sciencemag.org/content/early/2020/04/09/science.abb6936">一個牛津流行病學家的團隊</a>提出使用app來對抗COVID0-19的方案。)</p>
 	<p>等等，追蹤你曾接觸過的人的app⋯⋯？這是不是代表放棄隱私權然後交給老大哥？</p>
@@ -280,18 +280,18 @@
 	<p><img src="pics/dp3t.png" /></p>
 	<p>(<a href="https://ncase.me/contact-tracing/">這裡可見完整的漫畫</a>。關於「惡搞」／偽陽性／等等請見註腳： <a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a> )</p>
 	<p>與其他相似的團隊如TCN協議<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a>與MIT的PACT<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a>，他們啟發了蘋果和Google直接將隱私權優先的接觸追蹤植入Android/iOS<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a> （不相信Google/蘋果？很好！這個系統美妙的地方是它 <em>不需要</em> 信任！）不久之後，你的地方衛生機構可能會要求你下載一款app，如果它是隱私優先且原始碼公開的軟體，請這麼做！</p>
-	<p>但那些沒有智慧型手機的民眾怎麼辦？或者感染源是門把怎麼辦？或「真的」無症狀的病例？接觸追蹤app沒辦法抓到所有的傳染源⋯⋯ <em>沒有關係！</em> 我們不需要抓到 <em>所有的</em> 感染源，只需要60%+即能達到 R &lt; 1。</p>
-	<p>（註腳是關於混淆未產生症狀與「真正的」無症狀感染的抱怨——真正的無症狀感染很罕見：<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a>）</p>
+	<p>但那些沒有智慧型手機的民眾怎麼辦？或者感染源是門把怎麼辦？或「真正」無症狀的病例？接觸追蹤app沒辦法抓到所有的傳染源⋯⋯ <em>沒有關係！</em> 我們不需要抓到 <em>所有的</em> 感染源，只需要60%+即能達到 R &lt; 1。</p>
+	<p>（註腳是關於混淆未產生症狀與「真正」無症狀感染的抱怨——真正的無症狀感染很罕見：<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a>）</p>
 	<p>隔離 <em>出現症狀</em> 的病例能將R降低最多40%，而隔離他們處於潛伏期／沒有症狀的接觸者能將R降低最多50%<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a>:</p>
 	<div class="sim">
 	        <iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 	</div>
-	<p>因此，即使沒有將100%的接觸者隔離起來，我們還是能在 <em>沒有封鎖</em> 的情況下得到 R &lt; 1！對心理健康和財務健康要好多了。（對那些需要自主隔離／隔離檢疫的民眾， <em>政府應該要補助他們的花費</em> ——包含檢測費用、工作保障、提供有薪假等等。仍然比間歇性封鎖要好多了。）</p>
+	<p>因此，即使沒有將100%的接觸者隔離起來，我們還是能在 <em>沒有封鎖</em> 的情況下得到 R &lt; 1！對心理健康和經濟要好多了。（對那些需要自主隔離／隔離檢疫的民眾， <em>政府應該要補助他們的花費</em> ——包含檢測費用、工作保障、提供有薪假等等。仍然比間歇性封鎖要好多了。）</p>
 	<p>然後我們維持R &lt; 1直到疫苗問世，將可感染的<icon s></icon>變成免疫的<icon r></icon>。用 <em>正確的</em> 方法達到群體免疫：</p>
 	<div class="sim">
 	        <iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 	</div>
-	<p>（註：這個計算器假設疫苗百分之百有效。只要記得在現實中，我們需要施打 <em>大於</em> 「群體免疫」數量的疫苗來 <em>真正</em> 的群體免疫。）</p>
+	<p>（註：這個計算機假設疫苗百分之百有效。只要記得在現實中，我們需要施打 <em>大於</em> 「群體免疫」數量的疫苗來 <em>真正</em> 的群體免疫。）</p>
 	<p>好了，廢話夠了。以下是這些情況的模擬：</p>
 	<ol>
 	<li>數個月的封鎖，直到我們可以⋯⋯</li>
@@ -305,7 +305,7 @@
 	<p>就是這樣！這就是我們如何將飛機緊急迫降。</p>
 	<p>這就是我們如何打敗COVID-19。</p>
 	<p>...</p>
-	<p>但如果事情 <em>仍然</em> 往不好的方向發展呢？事情已經很糟了。這是恐懼。這很好！恐懼給我們力量制定 <em>備案</em> 。</p>
+	<p>但如果事情 <em>仍然</em> 往不好的方向發展呢？事情已經很糟了。這是恐懼，這很好！恐懼給我們力量制定 <em>備案</em> 。</p>
 	<p>悲觀者發明降落傘。</p>
 	<h3>場景4+：全民戴口罩、夏天、斷路器</h3>
 	<p>如果R<sub>0</sub>比我們想的要高得多，而且以上所有的手段，甚至是輕微的距離規範，<em>仍沒有</em>辦法讓 R &lt; 1呢？</p>
@@ -318,7 +318,7 @@
 	<p>然而我們並不知道口罩 <em>針對</em> COVID-19的效應有多大，科學上我們只應該發表有95%信心的發現。（⋯⋯應該。<a href="#fn33" class="footnote-ref" id="fnref33" role="doc-noteref"><sup>33</sup></a>）在2020年5月1日我們對於口罩的效應只有「低於95%的信心」。</p>
 	<p>但對付疫情就像牌局， <strong>如果要等到有百分之九十五的把握才要下注，那在賭局中你將輸得很慘</strong> 正如一篇近期在英國醫學期刊(BMJ)關於口罩的論文提到的<a href="#fn34" class="footnote-ref" id="fnref34" role="doc-noteref"><sup>34</sup></a>，我們 <em>必須</em> 在不確定中做利弊分析。像這樣：</p>
 	<p>成本：如果自製衣物口罩（效用大約是醫用口罩的2/3<a href="#fn35" class="footnote-ref" id="fnref35" role="doc-noteref"><sup>35</sup></a>），超級便宜。醫用口罩比較貴但還是很便宜。</p>
-	<p>好處：即使只有5成的機會醫用口罩能降低70%的傳播，5成的機會它們完全沒用， <em>期望值</em> 仍舊是35%，這跟半封城一樣！因為不確定性，我們猜測醫用口罩能降低R值最多至35%（再一次說你可以藉由改變參數來挑戰我們的假設）。</p>
+	<p>好處：即使假設只有5成的機會醫用口罩能降低70%的傳播，5成的機會它們完全沒用， <em>期望值</em> 仍舊是35%，這跟半封城的效果一樣！因為不確定性，我們猜測醫用口罩能降低R值最多至35%（再一次說你可以藉由改變參數來挑戰我們的假設）。</p>
 	<div class="sim">
 	        <iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 	</div>
@@ -327,7 +327,7 @@
 	<p><strong>「這會讓人們更輕忽洗手和社交距離。」</strong> 的確，安全帶讓人們忽略交通號誌，牙線讓人們亂吃。但認真說，我們會往相反的方向論證：口罩是一個<em>實體化</em>的提醒——而且在東亞，口罩是團結的象徵！</p>
 	<p><em>單單使用</em> 口罩沒辦法達到 R &lt; 1。但如果洗手加「檢驗、追蹤、隔離」將R降低至1.10，只需1/3的人戴口罩就能將R降到1以下，成功遏制病毒！</p>
 	<p><strong>夏天：</strong></p>
-	<p>Okay，這不是我們能掌握的「手段」，但這會有幫助！一些新聞報導指出夏天不會對疫情造成任何影響，他們對一半：夏天不會讓 R &lt; 1，但 <em>會</em> 降低R。</p>
+	<p>Okay，這不是我們能掌握的「手段」，但這會有幫助！一些新聞報導指出夏天不會對疫情造成任何影響，他們只對一半：夏天不會讓 R &lt; 1，但 <em>會</em> 降低R。</p>
 	<p>對COVID-19來說，每增加攝氏1度（華氏1.8度）會讓R值降低1.2%。<a href="#fn37" class="footnote-ref" id="fnref37" role="doc-noteref"><sup>37</sup></a>紐約市夏冬溫差是攝氏26度（華氏47度）<a href="#fn38" class="footnote-ref" id="fnref38" role="doc-noteref"><sup>38</sup></a>，所以夏天會讓R降低約31%。</p>
 	<div class="sim">
 	        <iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
@@ -351,10 +351,10 @@
 	<li>在商場和學校量測體溫</li>
 	<li>公共場所全面消毒</li>
 	<li><a href="https://twitter.com/V_actually/status/1233785527788285953">將握手改為碰腳</a></li>
-	<li>和其它一切人類的創造力將帶來 . . .</li>
+	<li>和其它一切人類的創造力將帶來⋯⋯</li>
 	</ul>
 	<p>我們希望這些計畫能帶給你希望。</p>
-	<p><strong>即使在悲觀的情況，在保全心理健康和經濟的前提下打敗COVID-19仍是可能的。</strong> 將封鎖視為「重啟鍵」，用隔離病患來保持 R &lt; 1＋保護隱私的接觸追蹤＋口罩（至少自製口罩）⋯⋯生活可以幾乎回歸正常！</p>
+	<p><strong>即使在悲觀的情況，在保全心理健康和經濟的前提下打敗COVID-19仍是可能的。</strong> 將封鎖視為「重啟鍵」，用隔離病患來保持R值小於1＋保護隱私的接觸追蹤＋口罩（至少自製口罩）⋯⋯生活可以幾乎回歸正常！</p>
 	<p>當然，你可能會有雙乾裂的手，但你可以到漫畫店約會！你可以和朋友出門去看最新的好萊塢大戲。你可以去圖書館觀察人群，享受人們 <em>活著</em> 從事日常事務的喜悅。</p>
 	<p>即使在最壞的情況下⋯⋯生命仍能堅持下去。</p>
 	<p>所以讓我們為 <em>最壞</em> 的幾個情況做計畫。我們會在水面降落，準備好你的救生衣，跟隨指示燈到緊急逃生口：</p>
@@ -364,7 +364,7 @@
 	        <div>接下來的幾年</div>
 	    </div>
 	</div>
-	<p>你得到新冠肺炎並且復原了，或者你接種了疫苗。不管哪種情況，你現在都有免疫力⋯⋯</p>
+	<p>你得到COVID-19並且復原了，或者你接種了疫苗。不管哪種情況，你現在都有免疫力⋯⋯</p>
 	<p>⋯⋯ <em>能持續多久？</em></p>
 	<ul>
 	<li>COVID-19最親近的近親為SARS，SARS的倖存者有2年的免疫力。 <a href="#fn39" class="footnote-ref" id="fnref39" role="doc-noteref"><sup>39</sup></a></li>
@@ -373,26 +373,26 @@
 	<li>一篇還未經同行審查關於猴子的研究顯示對新冠病毒的免疫力至少能持續28天。<a href="#fn42" class="footnote-ref" id="fnref42" role="doc-noteref"><sup>42</sup></a></li>
 	</ul>
 	<p>但人體對COVID-19的免疫力 <em>有多長</em> ，在2020年5月1日的現在仍舊是大哉問。</p>
-	<p>讓我們假設在接下來的模擬時間為1年 <strong>這個模擬從100% <icon r></icon></strong> 開始，在 <em>平均</em> 一年後指數遞減為易感或沒有免疫力（可能有些變異）：</p>
+	<p>讓我們假設在接下來的模擬時間為1年 <strong>這個模擬從100% <icon r></icon></strong> 開始，在 <em>平均</em> 一年後指數遞減為易感或沒有免疫力（可能有些變異數）：</p>
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 	</div>
 	<p>指數遞減回歸！</p>
-	<p>這叫 <strong>SEIRS模型</strong> 。最後的S再次代表<icon s></icon>易感(susceptible)病患。</p>
+	<p>這叫 <strong>SEIRS模型</strong> 。最後的S還是代表<icon s></icon>易感(susceptible)病患。</p>
 	<p><img src="pics/seirs.png" /></p>
 	<p>接下來讓我們模擬在 <em>免疫力只持續1年的假設下</em> ，接下來的十年爆發COVID-19疫情並且沒有干預手段的情況：</p>
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 	</div>
-	<p>在之前的模擬，我們只會得到 <em>1個</em> 加護病房過滿的尖峰，現在我們得到數個 <em>而且</em> <icon i></icon>將 <em>一直</em> 佔住加護病房。（記得我們已經將加護病房容量增加3倍了）</p>
-	<p>R = 1, 這是 <strong>流行(endemic)。</strong></p>
+	<p>在之前的模擬，我們只會得到 <em>1個</em> 加護病房過滿的尖峰，現在我們得到數個 <em>而且</em> <icon i></icon>將 <em>一直</em> 佔住加護病房（記得我們已經將加護病房容量增加3倍了）。</p>
+	<p>R = 1， 這是 <strong>流行(endemic)。</strong></p>
 	<p>幸好，因為夏天會降低R值，這會讓模擬好一些：</p>
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 	</div>
 	<p>喔。</p>
 	<p>違反直覺地，夏天讓這些尖峰變得更糟而且頻繁發生！這是因為夏天將<icon i></icon>降低，但同時也減低了新增免疫<icon r></icon>的人數。這意味著免疫人數在夏天驟減，在冬天 <em>製造</em> 新的尖峰。</p>
-	<p>幸好解決方案相當直接——只要在秋冬讓民眾接種疫苗，如同對付流感的流感疫苗：</p>
+	<p>幸好解決方案相當直接——只要在秋冬讓民眾接種疫苗，如同我們對付流感所用的流感疫苗：</p>
 	<p><strong>（在試完預設參數後，試試看你自己的疫苗計畫！記得你可以隨時暫停或繼續模擬）</strong></p>
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
@@ -405,14 +405,14 @@
 	<p>1) 採取間歇性封鎖或寬鬆的R &lt; 1干預手段來達到「自然群體免疫」（警告：這會造成很多死亡及肺損傷案例）。 <em>而且</em> 如果免疫沒辦法持續這個方案不會有效。</p>
 	<p>2) 永遠採取R &lt; 1干預手段。接觸追蹤和戴口罩成為後COVID-19世界的新日常，如果性病檢查和戴保險套成為後愛滋世界的新日常。</p>
 	<p>3) 採取R &lt; 1干預手段直到我們開發出讓COVID-19重症出現的機率遠遠降低（這是我們<em>無論如何</em>都應該做的！）。將重症率降低10倍相當於增加10倍的加護病房數：</p>
-	<p><strong>接下來的模擬假設 <em>沒有</em> 永久免疫、 <em>沒有</em> 疫苗甚至沒有任何干預手段，只有曾教度過長期性的尖峰所需的容量：</strong></p>
+	<p><strong>接下來的模擬假設 <em>沒有</em> 永久免疫、 <em>沒有</em> 疫苗甚至沒有任何干預手段，只有增加度過長期尖峰所需的容量：</strong></p>
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 	</div>
 	<p>即使在最糟的幾個情況中最壞的那個⋯⋯生命仍能堅持下去。</p>
 	<p>...</p>
 	<p>也許你想嘗試使用不同的R<sub>0</sub>或數字，或嘗試模擬你<em>自己的</em>干預計劃組合來挑戰我們的假設！</p>
-	<p><strong>接下來模擬是沙盒模式， <em>所有的</em> 參數都列出來，（滑動來看到所有的參數）模擬和常識你心中的想法：</strong></p>
+	<p><strong>接下來模擬是沙盒模式， <em>所有的</em> 參數都列出來了（下滑來看到所有參數），模擬和嘗試你心中的想法：</strong></p>
 	<div class="sim">
 	        <iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 	</div>
@@ -424,21 +424,21 @@
 	        <div>現在</div>
 	    </div>
 	</div>
-	<p>墜機了，我們爬上救生筏，現在是找到陸地的時候了。<a href="#fn45" class="footnote-ref" id="fnref45" role="doc-noteref"><sup>45</sup></a></p>
+	<p>墜機了，我們爬上了救生筏，現在是找到陸地的時候了。<a href="#fn45" class="footnote-ref" id="fnref45" role="doc-noteref"><sup>45</sup></a></p>
 	<p>許多流行學家和政策制定者的團隊（<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">左派</a>、<a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">右派</a>和<a href="https://ethics.harvard.edu/covid-roadmap">跨黨派</a>）已經達成在保全我們的生活 <em>及</em> 自由的前提下，如何打敗COVID-19的共識。</p>
 	<p>以下是基本的想法，以及一些（比較沒有共識）的備案：</p>
 	<p><img src="pics/plan.png" /></p>
-	<p>所以這在當下對你的意義是什麼？</p>
+	<p>所以這對你在這個當下的意義是什麼？</p>
 	<p><strong>給所有人：</strong> 遵守封城規定讓我們能越快脫離第一階段越好、持續洗手、製作你自己的口罩。在下個月<em>保護隱私</em>的接觸追蹤app問世時下載他們。保持身心健康！寫信給你的地方決策者，叫他們開始行動⋯⋯</p>
 	<p><strong>給決策者：</strong> 制訂支援需要自主隔離／隔離檢疫的民眾。雇用更多接觸追蹤員，並讓接觸追蹤app<em>協助</em>他們。提供更多資金讓我們可以製作⋯⋯</p>
-	<p><strong>給建造者：</strong> 製作測試。製造呼吸器。製造給醫院的個人保護用具。製作測試。製造口罩。開發app。製作抗病毒藥物、預防藥物、和其它非疫苗的治療。製作疫苗。製作測試。製作測試。製作測試。建立希望。</p>
+	<p><strong>給建造者：</strong> 製作測試，製造呼吸器，製造給醫院的個人保護用具，製作測試，製造口罩，開發app，製作抗病毒藥物、預防藥物和其它非疫苗的治療，製作疫苗，製作測試，製作測試，製作測試，建立希望。</p>
 	<p>不要用壓制恐懼來建立希望。我們的恐懼應該和希望用在一起，如同飛機和降落傘的發明人。為恐怖的未來做準備是我們如何 <em>產生</em> 有希望的未來。</p>
 	<p>唯一需要恐懼的是唯一需要恐懼的是恐懼的想法。</p>
 	<section class="footnotes" role="doc-endnotes">
 	<hr />
 	<ol>
 	<li id="fn1" role="doc-endnote"><p>註腳將包含來源、連結或額外的註解，如同這個註解！</p>
-	<p><strong>這份指南的出版時間為2020年5月1日</strong> ，許多細節將會變得過時，但我們有信心這份指南將包含95%的可能未來，而流行病學101將會永遠有用。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+	<p><strong>這份指南的出版時間為2020年5月1日</strong> ，許多細節將會變得過時，但我們有信心這份指南將包含95%的未來可能性，而流行病學101將會永遠有用。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn2" role="doc-endnote"><p>「平均世代間隔為3.96天（95%信賴區間為3.53-4.39天）」<a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article">Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L</a>（聲明：早期發布文章並不被視為最終版）<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn3" role="doc-endnote"><p><strong>記住：所有的模擬都為了教育目的過度簡化</strong></p>
 	<p>其中一個簡化：當你叫這個模擬器「每X天傳染1人」，它實際上做的是每天增加1/X個傳染者，接下來的模擬都是依照這個設定。「每X天復原」的意思是每天減少1/X個感染者。 它們的意思 <em>並不</em> 完全一樣但已足夠接近，而且比起直接設定傳染率／復原率，這比較容易理解並符合教育的宗旨。<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
@@ -462,14 +462,14 @@
 	<li id="fn19" role="doc-endnote"><p>如果我們將R用對數尺度畫出來的話，就能避免這層失真⋯⋯但這樣我們就需要解釋什麼是 <em>對數尺度</em> 。<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn20" role="doc-endnote"><p>「在沒有其它干預手段的情況下，社交距離成功的關鍵指標為是否超過了加護病房數量，為了避免這個情況，社交距離可能需要延長或間歇性實施到2022年。」 <a href="https://science.sciencemag.org/content/early/2020/04/14/science.abb5793">Kissler and Tedijanto et al</a><a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn21" role="doc-endnote"><p>見 <a href="https://journals.sagepub.com/doi/abs/10.1177/1745691614568352">Holt-Lunstad &amp; Smith 2010的圖6</a>。 當然，我們要聲明他們發現的是 <em>相關性</em> ，但除非你想嘗試隨機選取人們讓他們過孤獨的人生，我們只能得到觀察性證據。<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-	<li id="fn22" role="doc-endnote"><p><strong>至疾病可傳播平均要3天：</strong> 「假設從另一項對COVID-19早期病例的研究，潛伏期的平均值為5.2天，我們以此推斷在病患出現症狀的2.3天前（95%信賴區間 0.8-3.0天）開始具可傳播性。」（翻譯：假設症狀在感染後第5天出現，可傳染性在症狀出現2天前開始＝可傳播性在第3天開始） <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al.</a></p>
+	<li id="fn22" role="doc-endnote"><p><strong>至疾病可傳播平均要3天：</strong> 「假設從另一項對COVID-19早期病例的研究，潛伏期的平均值為5.2天，我們以此推斷在病患出現症狀的2.3天前（95%信賴區間 0.8-3.0天）開始具可傳染性。」（翻譯：假設症狀在感染後第5天出現，可傳染性在症狀出現2天前開始＝可傳染性在第3天開始） <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al.</a></p>
 	<p><strong>平均4天開始能傳染給別人：</strong> 「平均[世代]間隔為3.96天（95%信賴區間3.53-4.39天）。」 <a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article">Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L</a></p>
 	<p><strong>發覺症狀平均需要5天：</strong> 「潛伏期的中位數估計為5.1天（95%信賴區間4.5-5.8天）」 <a href="https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED">Lauer SA, Grantz KH, Bi Q, et al</a><a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn23" role="doc-endnote"><p>「我們估計到44%的次代病例（95%信賴區間25-69%）是在初代病例產生症狀前被感染的。」 <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al</a><a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn24" role="doc-endnote"><p>「接觸者追蹤是賴比瑞亞的關鍵手段，是歷史上流行期間最大的接觸者追蹤工作之一。」 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/">Swanson KC, Altare C, Wesseh CS, et al.</a><a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn25" role="doc-endnote"><p>為了避免「惡搞」（民眾錯誤地聲稱他們被感染），DP-3T協議需要醫院先給你一個一次性的密碼讓你上傳你的資訊。</p>
 	<p>偽陽性對人工和數位追蹤來說都是問題。但我們仍然可以利用以下兩個辦法來降低偽陽性的出現：1) 只有在Bob聽到例如30+分鐘以上的訊息才通知他們，而不是僅靠一則訊息 2) 如果app <em>認為</em> Bob被感染了，那會將Bob交給 <em>人工</em> 追蹤進行進一步的深入追蹤。</p>
-	<p>其它的議題如資料屏寬、來源完整性和其它的安全性問題，請看<a href="https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing">DP-3T的開源白皮書！</a><a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+	<p>其它的議題如資料頻寬、來源完整性和其它的安全性問題，請看<a href="https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing">DP-3T的開源白皮書！</a><a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn26" role="doc-endnote"><p><a href="https://github.com/TCNCoalition/TCN#tcn-protocol">Temporary Contact Numbers：一個去中心化、隱私優先的接觸追蹤協議</a><a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn27" role="doc-endnote"><p><a href="https://pact.mit.edu/">PACT: Private Automated Contact Tracing</a><a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn28" role="doc-endnote"><p><a href="https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/">蘋果和Google合作開發COVID-19接觸追蹤科技</a>。注意他們 <em>並沒有自己開發</em> ，他們只是創造一個能支援這些軟體的平台。<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
@@ -486,7 +486,7 @@
 	<p>將潛伏期和無症狀患者加起來(45% + 5%)就會得到50%的R！<a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn31" role="doc-endnote"><p>「沒有任何一種手術面罩表現出足夠的過濾表現和貼合臉部的特徵，使他們能被視為呼吸道保護器材。」 <a href="https://www.sciencedirect.com/science/article/pii/S0196655307007742">Tara Oberg &amp; Lisa M. Brosseau</a><a href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn32" role="doc-endnote"><p>「我們觀察到的氣膠降低3.4倍 [減少70%]，加上Johnson等人的研究發現大型飛沫幾乎完全消除，顯示患者帶著醫用口罩可能對疾病傳播產生顯著的臨床影響。」<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/">Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ</a><a href="#fnref32" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-	<li id="fn33" role="doc-endnote"><p>一位真正的科學家讀到這句話可能正在哈哈大笑。見：<a href="https://en.wikipedia.org/wiki/Data_dredging">p-hacking</a>, <a href="https://en.wikipedia.org/wiki/Replication_crisis">再現性危機</a>)<a href="#fnref33" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+	<li id="fn33" role="doc-endnote"><p>真正的科學家讀到這句話可能正在哈哈大笑。見：<a href="https://en.wikipedia.org/wiki/Data_dredging">p-hacking</a>, <a href="https://en.wikipedia.org/wiki/Replication_crisis">再現性危機</a>)<a href="#fnref33" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn34" role="doc-endnote"><p>「現在是使用預防原則的時候了。」 <a href="https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf">Trisha Greenhalgh et al [PDF]</a><a href="#fnref34" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn35" role="doc-endnote"><p><a href="https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55">Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., &amp; Bennett, A</a> 見表1：對於兩項細菌氣膠的測試，百分之百純棉的T恤約有醫用口罩2/3的過濾力。<a href="#fnref35" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn36" role="doc-endnote"><p><strong>「我們需要為醫院省下物資。」</strong> <em>完全同意。</em> 但這比較是支持增加口罩產量的論述，而不是分配。因為同一時間我們可以用衣物做口罩。<a href="#fnref36" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
@@ -495,7 +495,7 @@
 	<li id="fn39" role="doc-endnote"><p>「針對SARS的抗體持續了平均兩年的時間 [...] 因此，SARS病患可能會在初次接觸3年後再次被感染。」 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/">Wu LP, Wang NC, Chang YH, et al.</a> 「不幸地」，我們永遠不會知道SARS的免疫到底能持續多久，因為我們很快就把它根除了。<a href="#fnref39" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn40" role="doc-endnote"><p>「我們發現招募／首次感染後34週，至少檢測一次陽性的機率與β-冠狀病毒HKU1和OC43復發的機率之間沒有顯著差異。」 <a href="http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf">Marta Galanti &amp; Jeffrey Shaman (PDF)</a><a href="#fnref40" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn41" role="doc-endnote"><p>「一旦人們抵抗了病毒，病毒顆粒就會殘留一段時間。它們不會引起感染，但是能觸發陽性檢測。」 <a href="https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/">根據STAT News上Andrew Joseph的文章</a><a href="#fnref41" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-	<li id="fn42" role="doc-endnote"><p>根據 <a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract">Bao et al.</a> <em>聲明：這篇文章是預印本，而且（還未）通過同行審查。</em> 同時要強調：他們只有在28天測試再次感染。<a href="#fnref42" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+	<li id="fn42" role="doc-endnote"><p>根據 <a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract">Bao et al.</a> <em>聲明：這篇文章是預印本，而且（還未）通過同行審查。</em> 同時要強調：他們只有在28天後檢驗再感染。<a href="#fnref42" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn43" role="doc-endnote"><p>「如果冠狀病毒疫苗問世了，世界能製造夠多嗎？」 <a href="https://www.nature.com/articles/d41586-020-01063-8">Roxanne Khamsi在自然期刊上的文章</a><a href="#fnref43" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn44" role="doc-endnote"><p>「不要急著在沒有足夠安全保障的情況下部署COVID-19疫苗和藥物」 <a href="https://www.nature.com/articles/d41586-020-00751-9">Shibo Jiang在自然期刊上的文章</a><a href="#fnref44" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 	<li id="fn45" role="doc-endnote"><p>陸地的比喻 <a href="https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/">來自STAT News上Marc Lipsitch &amp; Yonatan Grad的文章</a><a href="#fnref45" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
